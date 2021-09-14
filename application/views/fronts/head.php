@@ -7,6 +7,16 @@
 <meta name="description" content="<?php echo character_limiter($identitas->meta_deskripsi,200)?>">
 <meta name="keywords" content="<?php echo $identitas->meta_keyword?>">
 
+<meta property="og:site_name" content="<?php echo $identitas->url?>">
+<meta property="og:title" content="<?php echo $identitas->nama_website?>">
+<meta property="og:description" content="<?php echo character_limiter($identitas->meta_deskripsi,200)?>">
+<meta property="og:url" content="<?php echo $identitas->url?>">
+<meta property="og:image" content="<?php echo $identitas->url?>assets/frontend/campur/wmpnews.png">
+<meta property="og:image:url" content="<?php echo $identitas->url?>assets/frontend/campur/wmpnews.png">
+<meta property="og:image:width" content="75">
+<meta property="og:image:height" content="105">
+<meta property="og:type" content="article">
+
 <!-- SITE TITLE -->
 <title><?php echo $identitas->nama_website?></title>
 <!-- Favicon Icon -->

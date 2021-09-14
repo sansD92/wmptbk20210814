@@ -33,7 +33,7 @@
     </div>
 </section> -->
 
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/produk/Subproduk.png">
+<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/produk/Sub-Produk.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -80,9 +80,9 @@
                     <li><a href="#" data-filter=".pt-prima-widodo-makmur">Produk Olahan</a></li>
                      <li><a href="#" data-filter=".pt-widodofood-makmur-sejahtera">Komoditas</a></li>
                     <li><a href="#" data-filter=".pt-garut-makmur-perkasa">Leather</a></li>
-                    
-                   
-                    
+
+
+
                 </ul>
             </div>
         </div>
