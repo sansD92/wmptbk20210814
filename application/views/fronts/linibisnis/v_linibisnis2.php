@@ -39,6 +39,14 @@
  <section class="small_pt overflow_hide">
     <div class="container-fluid">
         <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="heading_s8 text-center">
+                    <h1><?php echo "$title"; ?></h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+
             <div class="col-lg-8 col-md-12 col-sm-12 p-0">
                 <div class="h-100 background_bg md-height-300 animation" data-animation="fadeInRight" data-animation-delay="0.2s" data-img-src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo "$gambar"; ?>">
                 </div>
@@ -46,7 +54,7 @@
             <div  class="col-lg-4 col-md-12 col-sm-12 p-0">
                 <div class="bg_blue h-100 d-flex align-items-center padding_eight_all text_white animation" data-animation="zoomIn" data-animation-delay="0.4s">
                     <div style="height: 350px">
-                        <h2 class="font-weight-light mb-3"> <span class="font-weight-bold"><?php echo "$title"; ?></span> </h2>
+                        <!-- <h2 class="font-weight-light mb-3"> <span class="font-weight-bold"><?php echo "$title"; ?></span> </h2> -->
 
                         <p ><?php echo "$deskripsi"; ?></p>
 
