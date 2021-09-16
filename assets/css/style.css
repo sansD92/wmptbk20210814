@@ -5985,7 +5985,7 @@ select[multiple] option {
 	text-decoration: underline;
 }
 .page-title h1 {
-	line-height: 0.1;
+	line-height: 0.3;
   font-size: 55px;
 	margin: 0;
 	text-transform: capitalize;
