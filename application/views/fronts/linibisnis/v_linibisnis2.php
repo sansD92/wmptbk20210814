@@ -62,24 +62,40 @@
 </section> -->
 <section class="small_pb">
     <div class="container">
+      <?php
+                       foreach ($linibisniskategori->result_array() as $r) {
+                           $sql = "select * from bisnis where bisnis_id = " . $r['bisnis_id'];
+                           $a = $this->db->query($sql)->result();
+                           $b = $a[0];
+                         ?>
         <div class="row">
             <div class="col-lg-8 mb-8 mb-lg-0">
               <div class="trainer-image animation" data-animation="fadeInLeft" data-animation-delay="0.1s">
-                 <img style="width: 100%"src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo "$gambar"; ?>">
+                <img <?php
+                    if(empty($r['bisnis_gambar'])) {
+                      echo "<img style='width:100%' src='".base_url()."assets/frontend/linibisnis/no-image.JPG'>";
+                    }else {
+                      echo " <img style='width:100%'  src='".base_url()."assets/frontend/linibisnis/".$r['bisnis_gambar']."'> ";}
+                    ?>
               </div>
             </div>
               <div class="col-4">
                 <div class="small_divider clearfix"></div>
-                <h3>Cianjur Farm</h3>
+                <h3><?php echo $r['bisnis_judul']?></h3>
                 <hr>
                 <div class="description">
-                    <p>130 Hektar
-</p>
-                    <p>Kapasitas 124.000 Ekor/Tahun</p>
+                    <p><?php echo $r['bisnis_desk']?><?php
+  	                    if(empty($r['bisnis_url'])) {
+  	                      echo "";
+  	                    }else {
+  	                      echo "
+  												<a href='$r[bisnis_url]' target='_blank' class='btn btn-outline-default'>Klik Disini</a>";}
+  	                    ?>
+                      </p>
                 </div>
             </div>
         </div>
-        
+          <?php }  ?>
     </div>
 </section>
 
@@ -111,7 +127,7 @@
 </section>
  -->
 <!-- START SECTION ABOUT US -->
-<section class='small_pb overflow_hide'>
+<!-- <section class='small_pb overflow_hide'>
     <div class='container'>
        <?php
                         foreach ($linibisniskategori->result_array() as $r) {
@@ -151,7 +167,7 @@
 
                             <?php }  ?>
     </div>
-</section>
+</section> -->
 <!-- END SECTION ABOUT US -->
 
 
