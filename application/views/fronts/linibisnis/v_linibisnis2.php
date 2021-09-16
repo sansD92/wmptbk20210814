@@ -20,7 +20,7 @@
 
             <div class="col-md-12 text-center">
               <div class="page-title">
-                  <h1><?php echo "$title"; ?></h1>
+                  <!-- <h1><?php echo "$title"; ?></h1> -->
               </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
