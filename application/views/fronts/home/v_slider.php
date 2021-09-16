@@ -14,7 +14,7 @@
                         <div class="col-lg-9 col-sm-12 text-center">
                             <div class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
                                 <p style="font-size: 45px; "class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s"><b><?php echo $post_new->slider_judul ?></b></p>
-                                  <a class="btn btn-default btn-radius animation animated fadeInUp" href="#" data-animation="fadeInUp" data-animation-delay="1.8s" style="animation-delay: 1.8s; opacity: 1;">Selengkapnya</a>
+                                  <a class="btn btn-default btn-radius btn-sm mb-2 animation animated fadeInUp" href="#" data-animation="fadeInUp" data-animation-delay="1.8s" style="animation-delay: 1.8s; opacity: 1;">Selengkapnya</a>
 
                                 <!-- <p style="font-size: 16px;" class="animation my-4" data-animation="fadeInUp" data-animation-delay="1.5s"><?php echo $post_new->slider_desk ?></p> -->
 
