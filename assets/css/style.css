@@ -2410,7 +2410,7 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 	left: 0;
 	position: absolute;
 	right: 0;
-	top: 50%;
+	top: 20%;
 	-moz-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -5985,8 +5985,9 @@ select[multiple] option {
 	text-decoration: underline;
 }
 .page-title h1 {
-    font-size: 55px;
-	margin: -0;
+	line-height: 0.1;
+  font-size: 55px;
+	margin: 0;
 	text-transform: capitalize;
 	font-weight: bold;
 }
@@ -6001,10 +6002,10 @@ select[multiple] option {
 	text-transform: capitalize;
 }
 .header_wrap.fixed-top + .breadcrumb_section {
-	padding-top: 10px;
+	padding-top: 160px;
 }
 .header_wrap.fixed-top + .breadcrumb_section2 {
-	padding-top: 20px;
+	padding-top: 200px;
 }
 /*===================================*
   18. END BREADCRUMB SECTION
