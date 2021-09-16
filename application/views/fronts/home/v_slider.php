@@ -6,14 +6,14 @@
           if(empty($post_new->slider_gambar)) {
             echo "<div class='carousel-item background_bg ' data-img-src='".base_url()."assets/images/blog_small_img1_350X198.jpg'>";
             }else {
-            echo " <div class='carousel-item ".$post_new->slider_meta_desk." background_bg overlay_bg2' data-img-src='".base_url()."assets/frontend/slider/".$post_new->slider_gambar."'> ";}
+            echo " <div class='carousel-item ".$post_new->slider_meta_desk." background_bg ' data-img-src='".base_url()."assets/frontend/slider/".$post_new->slider_gambar."'> ";}
          ?>
             <div class="banner_slide_content">
                 <div class="container"><!-- STRART CONTAINER -->
                     <div class="row justify-content-center">
                         <div class="col-lg-9 col-sm-12 text-center">
                             <div class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
-                                <p style="font-size: 45px; "class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s"><b><?php echo $post_new->slider_judul ?></b></p>
+                                <p style="font-size: 45px; "class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s"><b style="color:#000"><?php echo $post_new->slider_judul ?></b></p>
                                   <a style="font-size: 12px;"class="btn btn-default btn-radius btn-sm mb-2 animation animated fadeInUp" href="<?php echo $post_new->slider_link ?>" data-animation="fadeInUp" data-animation-delay="1.8s" style="animation-delay: 1.8s; opacity: 1;">Selengkapnya</a>
                                  
 
