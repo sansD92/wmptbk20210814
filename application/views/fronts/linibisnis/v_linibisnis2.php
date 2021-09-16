@@ -82,7 +82,7 @@
                 <h3><?php echo $r['bisnis_judul']?></h3>
                 <hr>
                 <div class="description">
-                    <p style="text-align: justify;"><?php echo $r['bisnis_desk']?><?php
+                    <p ><?php echo $r['bisnis_desk']?><?php
   	                    if(empty($r['bisnis_url'])) {
   	                      echo "";
   	                    }else {
