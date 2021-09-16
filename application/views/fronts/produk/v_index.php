@@ -33,22 +33,22 @@
     </div>
 </section> -->
 
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/produk/Sub-Produk.png">
+<section style="height: 300px;"class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/produk/Sub-Produk.png">
     <div class="container">
-        <div class="row">
+       <!--  <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>PRODUK</h1>
+                    <h1></h1>
                 </div>
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Produk</li>
+                    <li class="breadcrumb-item"><a></a></li>
+                    <li class="breadcrumb-item"><a></a></li>
+                    <li class="breadcrumb-item active" aria-current="page"></li>
                   </ol>
                 </nav>
             </div>
-        </div>
+        </div> -->
     </div>
 </section>
 <!-- END SECTION BANNER -->
@@ -57,6 +57,13 @@
 
 <section class="small_pb">
     <div class="container">
+         <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="heading_s8 text-center">
+                    <h1>Produk</h1>
+                </div>
+            </div>
+        </div>
         <div class="row">
            <!--  <div class="col-sm-12" >
                 <div class="heading_s4 text-center">
