@@ -81,14 +81,14 @@
                 <h3><?php echo $r['bisnis_judul']?></h3>
                 <hr>
                 <div class="description">
-                    <h5><?php echo $r['bisnis_desk']?><?php
+                    <p><?php echo $r['bisnis_desk']?><?php
   	                    if(empty($r['bisnis_url'])) {
   	                      echo "";
   	                    }else {
   	                      echo "
   												<a href='$r[bisnis_url]' target='_blank' class='btn btn-outline-default'>Klik Disini</a>";}
   	                    ?>
-                      </h5>
+                      </p>
                 </div>
             </div>
         </div>
