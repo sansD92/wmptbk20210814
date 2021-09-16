@@ -18,7 +18,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <div class="page-title">
+                <div style="    margin-top: -30px;"class="page-title">
                     <h1>Profil Perusahaan</h1>
                 </div>
                 <nav aria-label="breadcrumb">
@@ -28,7 +28,7 @@
                     <li class="breadcrumb-item active" aria-current="page">Profil Perusahaan</li>
                   </ol>
                 </nav>
-                <br><br><br><br><br>
+                <br><br><br>
             </div>
         </div>
     </div>
