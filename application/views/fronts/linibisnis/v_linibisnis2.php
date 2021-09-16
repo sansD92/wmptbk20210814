@@ -95,6 +95,7 @@
                 </div>
             </div>
         </div>
+        <br><br>
           <?php }  ?>
     </div>
 </section>
