@@ -6001,10 +6001,10 @@ select[multiple] option {
 	text-transform: capitalize;
 }
 .header_wrap.fixed-top + .breadcrumb_section {
-	padding-top: 10px;
+	padding-top: 160px;
 }
 .header_wrap.fixed-top + .breadcrumb_section2 {
-	padding-top: 20px;
+	padding-top: 200px;
 }
 /*===================================*
   18. END BREADCRUMB SECTION
