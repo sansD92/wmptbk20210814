@@ -46,12 +46,12 @@
                 <p style="text-align: justify; color: #000;">
                   PT Widodo Makmur Perkasa, Tbk perusahaan yang bergerak di sektor consumer goods dan komoditas Pertanian. Telah tumbuh dan berkembang selama 26 tahun, dikelola dan didukung oleh para tenaga muda dan ahli, sehingga layak menjadi mitra berorkestrasi dalam industri agrikultur dan consumer goods. PT Widodo Makmur Perkasa, Tbk memiliki lima lini bisnis yang saling berintergrasi, yaitu :
                 </p>
-                <h6>1. Peternakan Sapi Terintegrasi</h6>
-                <h6>2. Pengolahan Makanan Berbasis Daging</h6>
-                <h6>3. Peternakan Ayam Terintegrasi</h6>
-                <h6>4. Komoditas Pertanian</h6>
-                <h6>5. Konstruksi & Energi Terbarukan</h6>
-                <P></P>
+                <p style="text-align: justify; color: #000;">1. Peternakan Sapi Terintegrasi</p>
+                <p style="text-align: justify; color: #000;">2. Pengolahan Makanan Berbasis Daging</p>
+                <p style="text-align: justify; color: #000;">3. Peternakan Ayam Terintegrasi</p>
+                <p style="text-align: justify; color: #000;">4. Komoditas Pertanian</p>
+                <p style="text-align: justify; color: #000;">5. Konstruksi & Energi Terbarukan</p>
+                <P style="text-align: justify; color: #000;"></P>
 
                 <p style="text-align: justify; color: #000;">
                   Memegang teguh visi Provide Food For the Nation sehingga efisiensi dan orkestrasi terjadi di lima bisnis line, menjadikan PT Widodo Makmur Perkasa, Tbk sebagai kekuatan di Industri Consumer Goods dan Komoditas Pertanian terbesar di regional.

@@ -45,7 +45,7 @@ Version      : 2.1
 body {
 	background: #ffffff none repeat scroll 0 0;
     color: #888888;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat';
     font-size: 16px;
 	-webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -1171,10 +1171,10 @@ select option {
     background-attachment: fixed !important;
 }
 .font_style2 {
-	font-family: 'Courgette', cursive;
+	font-family: 'Montserrat', cursive;
 }
 .font_style3 {
-	font-family: 'Great Vibes', cursive;
+	font-family: 'Montserrat', cursive;
 }
 .btn_box_shadow:hover,
 .btn_box_shadow:focus,
