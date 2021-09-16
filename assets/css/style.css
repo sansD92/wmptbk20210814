@@ -6016,7 +6016,7 @@ select[multiple] option {
 
 .breadcrumb {
 	background-color: transparent;
-	margin: 0;
+	margin: 15px;
 	padding-left: 0;
 	padding-right: 0;
 	padding-bottom: 0;

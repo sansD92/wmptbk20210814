@@ -250,6 +250,7 @@
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">ESG</a>
                     <div class="dropdown-menu">
                         <ul>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/komitmenesg">Komitmen ESG</a></li>
                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/joglo-tumiyono">Joglo Tumiyono</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/kei">Kesatriaan Entrepreneur Indonesia</a></li>
                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/tahfidzwidodomakmursulaimaniyah">Pesantren Widodo Makmur Sulaimaniyah
