@@ -13,8 +13,8 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-9 col-sm-12 text-center">
                             <div class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
-                                <p style="font-size: 45px; "class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s"><b style="color:#000"><?php echo $post_new->slider_judul ?></b></p>
-                                  <a style="font-size: 12px;"class="btn btn-default btn-radius btn-sm mb-2 animation animated fadeInUp" href="<?php echo $post_new->slider_link ?>" data-animation="fadeInUp" data-animation-delay="1.8s" style="animation-delay: 1.8s; opacity: 1;">Selengkapnya</a>
+                                <p style="font-size: 45px; font-style: Montserrat;"class="animation text-uppercase" data-animation="fadeInDown" data-animation-delay="1s"><b style="color:#000"><?php echo $post_new->slider_judul ?></b></p>
+                                  <a style="font-size: 12px; "class="btn btn-default btn-radius btn-sm mb-2 animation animated fadeInUp" href="<?php echo $post_new->slider_link ?>" data-animation="fadeInUp" data-animation-delay="1.8s" style="animation-delay: 1.8s; opacity: 1;"><i style="font-size:12px;color: #000; font-style: Montserrat;">Selengkapnya<i></a>
                                  
 
 
