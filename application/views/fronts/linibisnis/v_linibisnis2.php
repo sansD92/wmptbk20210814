@@ -38,7 +38,7 @@
 <!-- END SECTION BANNER -->
 
 
-<!-- <section class="small_pt overflow_hide">
+ <section class="small_pt overflow_hide">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-md-12 col-sm-12 p-0">
@@ -84,14 +84,14 @@
                 <h3><?php echo $r['bisnis_judul']?></h3>
                 <hr>
                 <div class="description">
-                    <p><?php echo $r['bisnis_desk']?><?php
+                    <h5><?php echo $r['bisnis_desk']?><?php
   	                    if(empty($r['bisnis_url'])) {
   	                      echo "";
   	                    }else {
   	                      echo "
   												<a href='$r[bisnis_url]' target='_blank' class='btn btn-outline-default'>Klik Disini</a>";}
   	                    ?>
-                      </p>
+                      </h5>
                 </div>
             </div>
         </div>
