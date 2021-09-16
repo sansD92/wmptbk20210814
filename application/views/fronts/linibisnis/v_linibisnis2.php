@@ -14,7 +14,7 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section  page-title-light"  style ="height:400px;"data-img-src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo "$gambar_sub"; ?>">
+<section class="background_bg breadcrumb_section  page-title-light"  style ="height:500px;"data-img-src="<?php echo base_url()?>assets/frontend/linibisnis/<?php echo "$gambar_sub"; ?>">
     <div class="container">
         <div class="row">
 
@@ -82,7 +82,7 @@
                 <h3><?php echo $r['bisnis_judul']?></h3>
                 <hr>
                 <div class="description">
-                    <p style="text-align: justify;"><?php echo $r['bisnis_desk']?><?php
+                    <p ><?php echo $r['bisnis_desk']?><?php
   	                    if(empty($r['bisnis_url'])) {
   	                      echo "";
   	                    }else {
