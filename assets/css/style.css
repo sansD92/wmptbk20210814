@@ -458,12 +458,14 @@ button:focus {
 .heading_s5 h1,.heading_s5 h2,.heading_s5 h3,.heading_s5 h4,.heading_s5 h5,.heading_s5 h6,
 .heading_s6 h1,.heading_s6 h2,.heading_s6 h3,.heading_s6 h4,.heading_s6 h5,.heading_s6 h6,
 .heading_s7 h1,.heading_s7 h2,.heading_s7 h3,.heading_s7 h4,.heading_s7 h5,.heading_s7 h6,
+.heading_s8 h1,.heading_s8 h2,.heading_s8 h3,.heading_s8 h4,.heading_s8 h5,.heading_s8 h6,
 .widget_title3 {
 	font-weight: 700;
 	margin: 0;
 	text-transform: capitalize;
 }
 .heading_s1,
+.heading_s8,
 .heading_s2 {
 	margin-bottom: 30px;
 	padding-bottom: 15px;
@@ -486,6 +488,26 @@ button:focus {
     left: auto;
     right: 0;
 }
+
+.heading_s8::before {
+	background-color: #8C1824;
+	bottom: 0;
+	content: "";
+	height: 3px;
+	left: 0;
+	position: absolute;
+	width: 220px;
+}
+.heading_s8.text-center::before {
+    margin: 0 auto;
+    right: 0;
+}
+.heading_s8.text-right::before {
+    left: auto;
+    right: 0;
+}
+
+
 .heading_s2::before {
 	background-color: #8C1824;
 	bottom: 0;

@@ -16,7 +16,7 @@
   <div class="container">
     	<div class="row">
         	<div class="col-sm-12 text-center">
-            	<div class="page-title">
+            	<div class="heading_s8 text-center">
             		<h1>Hubungan Investor</h1>
                 </div>
             </div>
