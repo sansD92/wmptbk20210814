@@ -90,6 +90,7 @@
   												<a href='$r[bisnis_url]' target='_blank' class='btn btn-outline-default'>Klik Disini</a>";}
   	                    ?>
                       </p>
+                      <p></p>
                 </div>
             </div>
         </div>
