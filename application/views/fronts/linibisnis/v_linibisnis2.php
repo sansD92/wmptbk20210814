@@ -19,7 +19,7 @@
         <div class="row">
 
             <div class="col-md-12 text-center">
-              <div style="line-height: : 0.2 ;" class="page-title">
+              <div class="page-title">
                   <h1><?php echo "$title"; ?></h1>
               </div>
                 <nav aria-label="breadcrumb">
