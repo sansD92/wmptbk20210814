@@ -5991,6 +5991,7 @@ select[multiple] option {
 	text-transform: capitalize;
 	font-weight: bold;
 }
+
 .breadcrumb {
 	background-color: transparent;
 	margin: 0;
