@@ -54,9 +54,9 @@
                 <p style="text-align: justify; color: #000;">5. Konstruksi & Energi Terbarukan</p>
                 <P style="text-align: justify; color: #000;"></P>
 
-                <p style="text-align: justify; color: #000;">
+               <!--  <p style="text-align: justify; color: #000;">
                   Memegang teguh visi Provide Food For the Nation sehingga efisiensi dan orkestrasi terjadi di lima bisnis line, menjadikan PT Widodo Makmur Perkasa, Tbk sebagai kekuatan di Industri Consumer Goods dan Komoditas Pertanian terbesar di regional.
-                </p>
+                </p> -->
 
                <!--  <div>
                     <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/MOTTO.png" alt="struktur_organisasi"/>
