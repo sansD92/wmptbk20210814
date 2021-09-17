@@ -16,7 +16,7 @@ class M_produk extends CI_Model{
   }
   function get_by_id3($ids)
   {
-    $this->db->where('produk_detail.urutan_produk', $ids);
+    $this->db->where('produk_detail.id_produk', $ids);
     $this->db->or_where('produk.produk_seo', $ids);
     $this->db->join('produk', 'produk.id_produk = produk_detail.id_produk','inner');
     return $this->db->get('produk_detail')->result_array();
