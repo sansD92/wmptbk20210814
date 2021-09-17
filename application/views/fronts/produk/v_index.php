@@ -114,7 +114,7 @@
                               </div>
                         </div>
                     </li>
-                    <?php } ?>
+                    <?php } ?></ul>
                     <!-- END PORTFOLIO ITEM -->
 
 
