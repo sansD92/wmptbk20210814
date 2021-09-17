@@ -40,10 +40,52 @@
             <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                 <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                     <div class="heading_s1 text-center">
-                    <h2>KESATRIAAN ENTREPRENEUR INDONESIA</h2>
+                    <h2>Komitmen ESG</h2>
                 </div>
-                </div></div></div></div></section>
+                </div></div></div></div>
+</section>
 <!-- END SECTION BANNER -->
+<section class="small_pb">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-8 mb-lg-0">
+              <div class="trainer-image animation" data-animation="fadeInLeft" data-animation-delay="0.1s">
+              <img style="width:100%"  src="<?php echo base_url()?>assets/frontend/linibisnis/Produksipupukbaru.png" />
+              </div>
+            </div>
+              <div class="col-4">
+                <div class="small_divider clearfix"></div>
+                <h3>Produksi Pupuk</h3>
+                <hr>
+                <div class="description">
+                      <p></p>
+                      <ul><li style="text-align: justify;">Limbah cair dan padat diproduksi sebagai pupuk organik. Menjadi bentuk komitmen kami dalam melaksanakan zero waste&nbsp; untuk mereduksi efek rumah kaca (green house effect). PT Pasir Tengah telah merintis limbah peternakan untuk dikonversi sebagai bahan bakar biogas yang ramah lingkungan.&nbsp;<br></li></ul>
+                      <p></p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="row">
+            <div class="col-lg-8 mb-8 mb-lg-0">
+              <div class="trainer-image animation" data-animation="fadeInLeft" data-animation-delay="0.1s">
+              <img style="width:100%"  src="<?php echo base_url()?>assets/frontend/linibisnis/Energyterbarukan.png" />
+              </div>
+            </div>
+              <div class="col-4">
+                <div class="small_divider clearfix"></div>
+                <h3>Energy Terbarukan</h3>
+                <hr>
+                <div class="description">
+                      <p></p>
+                      <ul><li style="text-align: justify;">PT Langgeng Makmur Perkasa saat ini memfokuskan kepada pengelolaan dan pengembangan energi terbarukan berupa solar panel dan wind power untuk kebutuhan semua lini usaha Widodo Makmur Perkasa Grup.<br></li></ul>
+                      <p></p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+</section>
 
 <!-- START SECTION ABOUT US -->
 
