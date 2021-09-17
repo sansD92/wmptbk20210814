@@ -348,7 +348,7 @@ function get_all_blogs($per_page,$dari)
   }
   function get_all_produk()
   {
-    $this->db->limit(3);
+    $this->db->limit(6);
     $this->db->order_by('urutan_produk');
     return $this->db->get('produk')->result();
   }
