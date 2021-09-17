@@ -16,7 +16,6 @@ public function index()
       $data['status']   = 'active';
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
-       $data['posts_produk'] = $this->Crud_m->get_all_produk();
         $data['produks'] = $this->db->query("select * from produk   ORDER BY  urutan_produk ")->result();
 
 
