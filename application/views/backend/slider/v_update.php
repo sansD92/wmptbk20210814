@@ -52,7 +52,7 @@
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label>URL</label>
-                        <input type="text" class="form-control" name="slider_keyword" value="<?php echo $rows['slider_keyword'] ?>">
+                        <input type="text" class="form-control" name="slider_link" value="<?php echo $rows['slider_link'] ?>">
                       </div>
                     </div>
                   </div>

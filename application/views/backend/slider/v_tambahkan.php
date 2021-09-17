@@ -50,7 +50,7 @@
                     <div class="col-sm-12">
                       <div class="form-group">
                         <label>URL</label>
-                        <input type="text" class="form-control" name="slider_keyword" placeholder="">
+                        <input type="text" class="form-control" name="slider_link" placeholder="">
                       </div>
                     </div>
                     <div class="col-sm-12">

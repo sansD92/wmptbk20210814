@@ -1352,35 +1352,14 @@ class Aspanel extends CI_Controller {
 					$this->load->library('image_lib', $config);
 					$this->image_lib->resize();
 
-					if ($this->input->post('slider_keyword')!=''){
-								$tag_seo = $this->input->post('slider_keyword');
-								$tag=implode(',',$tag_seo);
-						}else{
-								$tag = '';
-						}
-					$tag = $this->input->post('slider_keyword');
-					$tags = explode(",", $tag);
-					$tags2 = array();
-					foreach($tags as $t)
-					{
-						$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
-						$a = $this->db->query($sql)->result_array();
-						if(count($a) == 0){
-							$data = array('keyword_nama'=>$this->db->escape_str($t),
-									'keyword_username'=>$this->session->username,
-									'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
-									'count'=>'0');
-							$this->As_m->insert('keyword',$data);
-						}
-						$tags2[] = $this->mylibrary->seo_title($t);
-					}
-					$tags = implode(",", $tags2);
+
 					if ($hasil22['file_name']==''){
 									$data = array(
 										'slider_post_oleh'=>$this->session->username,
 										'slider_judul'=>$this->db->escape_str($this->input->post('slider_judul')),
 										'slider_judul_seo'=>$this->mylibrary->seo_title($this->input->post('slider_judul')),
 										'slider_desk'=>$this->input->post('slider_desk'),
+										'slider_link'=>$this->input->post('slider_link'),
 										'slider_post_hari'=>hari_ini(date('w')),
 										'slider_post_tanggal'=>date('Y-m-d'),
 										'slider_post_jam'=>date('H:i:s'),
@@ -1393,6 +1372,7 @@ class Aspanel extends CI_Controller {
 													'slider_judul'=>$this->db->escape_str($this->input->post('slider_judul')),
 													'slider_judul_seo'=>$this->mylibrary->seo_title($this->input->post('slider_judul')),
 													'slider_desk'=>$this->input->post('slider_desk'),
+													'slider_link'=>$this->input->post('slider_link'),
 													'slider_post_hari'=>hari_ini(date('w')),
 													'slider_post_tanggal'=>date('Y-m-d'),
 													'slider_post_jam'=>date('H:i:s'),
@@ -1404,31 +1384,8 @@ class Aspanel extends CI_Controller {
 								$this->As_m->insert('slider',$data);
 								redirect('aspanel/slider');
 				}else{
-					$data['karyawan_menu_open']   = '';
-					$data['home_stat']   = '';
-					$data['identitas_stat']   = '';
-					$data['profil_stat']   = '';
-					$data['sliders_stat']   = '';
-					$data['products_stat']   = '';
-					$data['cat_products_stat']   = '';
-					$data['slider_stat']   = 'active';
-					$data['kontribs_stat']   = '';
-					$data['message_stat']   = '';
-					$data['gallery_stat']   = '';
-					$data['kehadiran_menu_open']   = '';
-					$data['jamkerja_stat']   = '';
-					$data['absen_stat']   = '';
-					$data['dataabsen_stat']   = '';
-					$data['cuti_stat']   = '';
-					$data['gaji_stat']   = '';
-					$data['pengumuman_stat']   = '';
-					$data['konfig_stat']   = '';
-					$data['produk_menu_open']   = '';
-					$data['produk_category']   = '';
-					$data['produk']   = '';
-					$data['services']   = '';
 
-					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
+
 					$this->load->view('backend/slider/v_tambahkan', $data);
 				}
 	}
@@ -1447,45 +1404,23 @@ class Aspanel extends CI_Controller {
 			$config['source_image'] = './assets/frontend/slider/'.$hasil22['file_name'];
 			$config['create_thumb']= FALSE;
 			$config['maintain_ratio']= FALSE;
-			$config['quality']= '80%';
+			$config['quality']= '99%';
 			$config['new_image']= './assets/frontend/slider/'.$hasil22['file_name'];
 			$this->load->library('image_lib', $config);
 			$this->image_lib->resize();
 
-			if ($this->input->post('slider_keyword')!=''){
-						$tag_seo = $this->input->post('slider_keyword');
-						$tag=implode(',',$tag_seo);
-				}else{
-						$tag = '';
-				}
-			$tag = $this->input->post('slider_keyword');
-			$tags = explode(",", $tag);
-			$tags2 = array();
-			foreach($tags as $t)
-			{
-				$sql = "select * from keyword where keyword_nama_seo = '" . $this->mylibrary->seo_title($t) . "'";
-				$a = $this->db->query($sql)->result_array();
-				if(count($a) == 0){
-					$data = array('keyword_nama'=>$this->db->escape_str($t),
-							'keyword_username'=>$this->session->username,
-							'keyword_nama_seo'=>$this->mylibrary->seo_title($t),
-							'count'=>'0');
-					$this->As_m->insert('keyword',$data);
-				}
-				$tags2[] = $this->mylibrary->seo_title($t);
-			}
-			$tags = implode(",", $tags2);
+
 						if ($hasil22['file_name']==''){
 										$data = array(
 											'slider_post_oleh'=>$this->session->username,
 											'slider_judul'=>$this->db->escape_str($this->input->post('slider_judul')),
 											'slider_judul_seo'=>$this->mylibrary->seo_title($this->input->post('slider_judul')),
 											'slider_desk'=>$this->input->post('slider_desk'),
+											'slider_link'=>$this->input->post('slider_link'),
 											'slider_post_hari'=>hari_ini(date('w')),
 											'slider_post_tanggal'=>date('Y-m-d'),
 											'slider_post_jam'=>date('H:i:s'),
-											'slider_meta_desk'=>$this->input->post('slider_meta_desk'),
-											'slider_keyword'=>$tag);
+											'slider_meta_desk'=>$this->input->post('slider_meta_desk'));
 											$where = array('slider_id' => $this->input->post('slider_id'));
 											$this->db->update('slider', $data, $where);
 						}else{
@@ -1494,12 +1429,12 @@ class Aspanel extends CI_Controller {
 											'slider_judul'=>$this->db->escape_str($this->input->post('slider_judul')),
 											'slider_judul_seo'=>$this->mylibrary->seo_title($this->input->post('slider_judul')),
 											'slider_desk'=>$this->input->post('slider_desk'),
+											'slider_link'=>$this->input->post('slider_link'),
 											'slider_post_hari'=>hari_ini(date('w')),
 											'slider_post_tanggal'=>date('Y-m-d'),
 											'slider_post_jam'=>date('H:i:s'),
 											'slider_gambar'=>$hasil22['file_name'],
-											'slider_meta_desk'=>$this->input->post('slider_meta_desk'),
-											'slider_keyword'=>$tag);
+											'slider_meta_desk'=>$this->input->post('slider_meta_desk'));
 											$where = array('slider_id' => $this->input->post('slider_id'));
 											$_image = $this->db->get_where('slider',$where)->row();
 											$query = $this->db->update('slider',$data,$where);
@@ -1516,31 +1451,8 @@ class Aspanel extends CI_Controller {
 					$proses = $this->As_m->edit('slider', array('slider_id' => $id, 'slider_post_oleh' => $this->session->username))->row_array();
 			}
 			$data = array('rows' => $proses);
-			$data['karyawan_menu_open']   = '';
-			$data['home_stat']   = '';
-			$data['identitas_stat']   = '';
-			$data['profil_stat']   = '';
-			$data['sliders_stat']   = '';
-			$data['products_stat']   = '';
-			$data['cat_products_stat']   = '';
-			$data['slider_stat']   = 'active';
-			$data['kontribs_stat']   = '';
-			$data['message_stat']   = '';
-			$data['gallery_stat']   = '';
-			$data['kehadiran_menu_open']   = '';
-			$data['jamkerja_stat']   = '';
-			$data['absen_stat']   = '';
-			$data['dataabsen_stat']   = '';
-			$data['cuti_stat']   = '';
-			$data['gaji_stat']   = '';
-			$data['pengumuman_stat']   = '';
-			$data['konfig_stat']   = '';
-			$data['produk_menu_open']   = '';
-			$data['produk_category']   = '';
-			$data['produk']   = '';
-			$data['services']   = '';
 
-			$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
+
 			$this->load->view('backend/slider/v_update', $data);
 		}
 	}
@@ -3285,33 +3197,28 @@ class Aspanel extends CI_Controller {
 		$ids = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
-					$config['upload_path'] = 'assets/frontend/tatakelola/';
-					$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
-					$this->upload->initialize($config);
-					$this->upload->do_upload('gambar');
-					$hasil22=$this->upload->data();
-					$config['image_library']='gd2';
-					$config['source_image'] = './assets/frontend/tatakelola/'.$hasil22['file_name'];
-					$config['create_thumb']= FALSE;
-					$config['maintain_ratio']= FALSE;
-					$config['quality']= '95%';
-					$config['new_image']= './assets/frontend/tatakelola/'.$hasil22['file_name'];
-					$this->load->library('image_lib', $config);
-					$this->image_lib->resize();
+			$ids = $this->input->post('tatakelola_cat_id');
+			$config['upload_path'] = 'assets/frontend/tatakelola/';
+			$config['allowed_types'] = 'pdf|PDF';
+			$this->upload->initialize($config);
+			$this->upload->do_upload('pdf');
+			$hasil22=$this->upload->data();
+			$this->load->library('upload', $config);
+
 					if ($hasil22['file_name']=='' ){
 									$data = array(
-													'id_produk'=>$this->input->post('id_produk'),
-													'nama_produk_detail'=>$this->input->post('nama_produk_detail'),
-													'deskripsi_produk_detail'=>$this->input->post('deskripsi_produk_detail'));
+													'tatakelola_cat_id'=>$this->input->post('tatakelola_cat_id'),
+													'tatakelola_judul'=>$this->input->post('tatakelola_judul'),
+													'tatakelola_judul_seo'=>$this->mylibrary->seo_title($this->input->post('tatakelola_judul')));
 												}else {
 												$data = array(
-													'id_produk'=> $this->input->post('id_produk') ,
-													'nama_produk_detail'=>$this->input->post('nama_produk_detail'),
-													'deskripsi_produk_detail'=>$this->input->post('deskripsi_produk_detail'),
-													'foto_produk_detail'=>$hasil22['file_name']);
+													'tatakelola_cat_id'=> $this->input->post('tatakelola_cat_id') ,
+													'tatakelola_judul'=>$this->input->post('tatakelola_judul'),
+													'tatakelola_judul_seo'=>$this->mylibrary->seo_title($this->input->post('tatakelola_judul')),
+													'tatakelola_gambar'=>$hasil22['file_name']);
 												}
 								$this->As_m->insert('tatakelola',$data);
-								redirect('aspanel/tatakelola/');
+								redirect('aspanel/tatakelola_kategori/');
 				}else{
 					$data['post'] = $this->Crud_m->get_by_id_produk($ids,'tatakelola_cat_id','tatakelola_kategori');
 					$this->load->view('backend/tatakelola/v_tambahkan', $data);
@@ -3319,80 +3226,59 @@ class Aspanel extends CI_Controller {
 	}
 	public function tatakelola_update()
 	{
-		cek_session_akses('products',$this->session->id_session);
+		cek_session_akses('tatakelola',$this->session->id_session);
 		$id = $this->uri->segment(3);
 		if (isset($_POST['submit'])){
 
-			$config['upload_path'] = 'assets/frontend/produk/';
-			$config['allowed_types'] = 'gif|jpg|png|JPG|JPEG';
+			$ids = $this->input->post('tatakelola_cat_id');
+			$config['upload_path'] = 'assets/frontend/tatakelola/';
+			$config['allowed_types'] = 'pdf|PDF';
 			$this->upload->initialize($config);
-			$this->upload->do_upload('gambar');
+			$this->upload->do_upload('pdf');
 			$hasil22=$this->upload->data();
-			$config['image_library']='gd2';
-			$config['source_image'] = './assets/frontend/produk/'.$hasil22['file_name'];
-			$config['create_thumb']= FALSE;
-			$config['maintain_ratio']= FALSE;
-			$config['quality']= '80%';
-			$config['new_image']= './assets/frontend/produk/'.$hasil22['file_name'];
-			$this->load->library('image_lib', $config);
-			$this->image_lib->resize();
+			$this->load->library('upload', $config);
+
+
 
 						if ($hasil22['file_name']==''){
 										$data = array(
-											'nama_produk_detail'=>$this->input->post('nama_produk_detail'),
-											'deskripsi_produk_detail'=>$this->input->post('deskripsi_produk_detail'));
-											$where = array('id_produk_detail' => $this->input->post('id_produk_detail'));
-							 				$this->db->update('produk_detail', $data, $where);
+											'tatakelola_judul'=>$this->input->post('tatakelola_judul'));
+											$where = array('tatakelola_id' => $this->input->post('tatakelola_id'));
+							 				$this->db->update('tatakelola', $data, $where);
 						}else{
 										$data = array(
 
-											'nama_produk_detail'=>$this->input->post('nama_produk_detail'),
-											'deskripsi_produk_detail'=>$this->input->post('deskripsi_produk_detail'),
-											'foto_produk_detail'=>$hasil22['file_name']);
-											$where = array('id_produk_detail' => $this->input->post('id_produk_detail'));
-											$_image = $this->db->get_where('produk_detail',$where)->row();
-											$query = $this->db->update('produk_detail',$data,$where);
+											'tatakelola_judul'=>$this->input->post('tatakelola_judul'),
+											'tatakelola_gambar'=>$hasil22['file_name']);
+											$where = array('tatakelola_id' => $this->input->post('tatakelola_id'));
+											$_image = $this->db->get_where('tatakelola',$where)->row();
+											$query = $this->db->update('tatakelola',$data,$where);
 											if($query){
-												unlink("assets/frontend/produk/".$_image->foto_produk_detail);
+												unlink("assets/frontend/tatakelola/".$_image->tatakelola_gambar);
 											}
 						}
-						redirect('aspanel/products');
+						redirect('aspanel/tatakelola'. $ids);
 		}else{
 			if ($this->session->level=='1'){
-					 $proses = $this->As_m->edit('produk_detail', array('id_produk_detail' => $id))->row_array();
+					 $proses = $this->As_m->edit('tatakelola', array('tatakelola_id' => $id))->row_array();
 			}else{
-					$proses = $this->As_m->edit('produk_detail', array('id_produk_detail' => $id))->row_array();
+					$proses = $this->As_m->edit('tatakelola', array('tatakelola_id' => $id))->row_array();
 			}
 			$data = array('rows' => $proses);
-			$data['karyawan_menu_open']   = '';
-			$data['home_stat']   = '';
-			$data['identitas_stat']   = '';
-			$data['profil_stat']   = '';
-			$data['sliders_stat']   = '';
-			$data['products_stat']   = '';
-			$data['cat_products_stat']   = '';
-			$data['slider_stat']   = '';
-			$data['kontribs_stat']   = '';
-			$data['message_stat']   = '';
-			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
-
-			$data['produk_menu_open']   = 'menu-open';
- 			$data['produk_category']   = '';
- 			$data['produk']   = 'active';
- 			$data['services']   = '';
-			$this->load->view('backend/products_detail/v_update', $data);
+			$this->load->view('backend/tatakelola/v_update', $data);
 		}
 	}
 	public function tatakelola_delete()
 	{
-			cek_session_akses ('products_detail',$this->session->id_session);
+			cek_session_akses ('tatakelola',$this->session->id_session);
 			$id = $this->uri->segment(3);
-			$_id = $this->db->get_where('produk_detail',['id_produk_detail' => $id])->row();
-			 $query = $this->db->delete('produk_detail',['id_produk_detail'=>$id]);
+			$ids = $this->input->post('tatakelola_cat_id');
+			$_id = $this->db->get_where('tatakelola',['tatakelola_id' => $id])->row();
+			 $query = $this->db->delete('tatakelola',['tatakelola_id'=>$id]);
 		 	if($query){
-							 unlink("./assets/frontend/produk/".$_id->foto_produk_detail);
+							 unlink("./assets/frontend/tatakelola/".$_id->tatakelola_gambar);
 		 }
-		redirect('aspanel/products');
+		redirect('aspanel/tatakelola'. $ids);
 	}
 	/*	Bagian untuk Tata Kelola - Penutup	*/
 
