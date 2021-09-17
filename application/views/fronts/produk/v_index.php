@@ -33,9 +33,9 @@
     </div>
 </section> -->
 
-<section style="height: 300px;"class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/produk/Sub-Produk.png">
+<!-- <section style="height: 300px;"class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/produk/Sub-Produk.png">
     <div class="container">
-       <!--  <div class="row">
+         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
                     <h1></h1>
@@ -48,9 +48,9 @@
                   </ol>
                 </nav>
             </div>
-        </div> -->
+        </div> 
     </div>
-</section>
+</section> -->
 <!-- END SECTION BANNER -->
 
 <!-- START SECTION ABOUT US -->
