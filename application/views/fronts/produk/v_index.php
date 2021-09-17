@@ -55,7 +55,7 @@
 
 <!-- START SECTION ABOUT US -->
 
-<section class="small_pb">
+<section class="small_pt">
     <div class="container">
          <div class="row">
             <div class="col-sm-12 text-center">
