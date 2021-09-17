@@ -76,7 +76,7 @@
                          ?>
         <div class="row">
             <div class="col-lg-8 mb-8 mb-lg-0">
-              <div class="trainer-image animation" data-animation="fadeInLeft" data-animation-delay="0.1s">
+              <div class="trainer-image animation" >
                 <img <?php
                     if(empty($r['bisnis_gambar'])) {
                       echo "<img style='width:100%' src='".base_url()."assets/frontend/linibisnis/no-image.JPG'>";

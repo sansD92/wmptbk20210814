@@ -98,12 +98,7 @@
                 <ul class="portfolio_container gutter_small work_col3 portfolio_gallery portfolio_style5 " >
                     <li class="grid-sizer"></li>
                     <!-- START PORTFOLIO ITEM -->
-                        <?php
-              foreach ($produks as $post_new)
-              {
-                
-              ?>
-                   
+                    <?php  foreach ($posts_produk as $post_new){ ?>
                     <li class="portfolio-item <?php echo $post_new->produk_seo ?>">
                         <div class="portfolio_item">
                             <a href="<?php echo base_url("produk/details/$post_new->produk_seo ") ?>" class="image_link">
