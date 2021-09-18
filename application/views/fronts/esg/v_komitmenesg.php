@@ -15,7 +15,7 @@
 
 
 <!-- START SECTION BANNER -->
-<section  class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/Sub-Joglo2.png">
+<section  class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/Sub-ESG.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -48,13 +48,13 @@
     <?php
               foreach ($komitmenesg as $post_new)
               {
-                
+
               ?>
         <div class="row">
             <div class="col-lg-8 mb-8 mb-lg-0">
               <div class="trainer-image animation" data-animation="fadeInLeft" data-animation-delay="0.1s">
                 <img style="width: 100%;"src="<?php echo base_url()?>assets/frontend/esg/<?php echo $post_new->komitmenesg_gambar ?>" alt="">
-                
+
               </div>
             </div>
               <div class="col-4">
@@ -63,7 +63,7 @@
                 <hr>
                 <div class="description">
                     <p ><?php echo $post_new->komitmenesg_deskripsi ?>
-                                        
+
                       </p>
                       <p></p>
                 </div>
@@ -76,7 +76,7 @@
 <!-- END SECTION BANNER -->
 
  <section class="small_pb">
-   
+
 </section>
 <!-- START SECTION ABOUT US -->
 

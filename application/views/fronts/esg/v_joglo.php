@@ -61,32 +61,32 @@
                   Joglo Tumiyono aktif mendukung masyarakat dan menyediakan tempat untuk pengembangan kualitas sumber daya manusia, di antaranya melalui kegiatan pengembangan ekonomi, seni dan budaya.
 
                 </p>
-               
+
 
                 <!-- <p>Gallery</p> -->
-                
+
                 <div class="row">
                     <div class="col-md-12">
                         <ul class="portfolio_container work_col2 gutter_small image_gallery">
                             <li class="grid-sizer"></li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/frontend/campur/1.Dronejoglo.png"><img src="<?php echo base_url()?>assets/frontend/campur/1.Dronejoglo.png" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/Joglo-1.png"><img src="<?php echo base_url()?>assets/frontend/campur/Joglo-1.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/frontend/campur/2.joglodimalamhari.png"><img src="<?php echo base_url()?>assets/frontend/campur/2.joglodimalamhari.png" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/Joglo-2.png"><img src="<?php echo base_url()?>assets/frontend/campur/Joglo-2.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/frontend/campur/1.JOGLO.png"><img src="<?php echo base_url()?>assets/frontend/campur/1.JOGLO.png" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/Joglo-3.png"><img src="<?php echo base_url()?>assets/frontend/campur/Joglo-3.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/frontend/campur/2.JOGLO.png"><img src="<?php echo base_url()?>assets/frontend/campur/2.JOGLO.png" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/Joglo-4.png"><img src="<?php echo base_url()?>assets/frontend/campur/Joglo-4.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/frontend/campur/3.JOGLO.png"><img src="<?php echo base_url()?>assets/frontend/campur/3.JOGLO.png" alt="image"></a>
+                                <a href="<?php echo base_url()?>assets/frontend/campur/Joglo-5.png"><img src="<?php echo base_url()?>assets/frontend/campur/Joglo-5.png" alt="image"></a>
                             </li>
                             <li class="portfolio-item">
-                                <a href="<?php echo base_url()?>assets/frontend/campur/4.JOGLO.png"><img src="<?php echo base_url()?>assets/frontend/campur/4.JOGLO.png" alt="image"></a>
-                            </li> 
+                                <a href="<?php echo base_url()?>assets/frontend/campur/Joglo-6.png"><img src="<?php echo base_url()?>assets/frontend/campur/Joglo-6.png" alt="image"></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
         </div>
             </div>
 
- 
+
         </div>
             </div>
         </div>

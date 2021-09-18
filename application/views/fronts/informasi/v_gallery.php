@@ -30,23 +30,18 @@
                 <ul class="portfolio_container work_col2 gutter_small image_gallery">
                     <li class="grid-sizer"></li>
                     <li class="portfolio-item">
-                        <a href="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Gallery1.png"><img src="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Gallery1.png" alt="image"></a>
+                        <a href="<?php echo base_url()?>assets\frontend\campur\gallery1.png"><img src="<?php echo base_url()?>assets\frontend\campur\gallery1.png" alt="image"></a>
                     </li>
                     <li class="portfolio-item">
-                        <a href="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Gallery2.png"><img src="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Gallery2.png" alt="image"></a>
+                        <a href="<?php echo base_url()?>assets\frontend\campur\gallery2.png"><img src="<?php echo base_url()?>assets\frontend\campur\gallery2.png" alt="image"></a>
                     </li>
                     <li class="portfolio-item">
-                        <a href="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Gallery3.png"><img src="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Gallery3.png" alt="image"></a>
+                        <a href="<?php echo base_url()?>assets\frontend\campur\gallery3.png"><img src="<?php echo base_url()?>assets\frontend\campur\gallery3.png" alt="image"></a>
                     </li>
                     <li class="portfolio-item">
-                        <a href="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Galleryz4.png"><img src="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Galleryz4.png" alt="image"></a>
+                        <a href="<?php echo base_url()?>assets\frontend\campur\gallery4.png"><img src="<?php echo base_url()?>assets\frontend\campur\gallery4.png" alt="image"></a>
                     </li>
-										<li class="portfolio-item">
-                        <a href="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Galleryz5.png"><img src="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Galleryz5.png" alt="image"></a>
-                    </li>
-										<li class="portfolio-item">
-                        <a href="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Galleryz6.png"><img src="<?php echo base_url()?>assets\frontend\campur\Foto-Foto-Galleryz6.png" alt="image"></a>
-                    </li>
+									
                 </ul>
             </div>
         </div>
