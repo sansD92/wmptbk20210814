@@ -14,19 +14,15 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/Subtentangkami.png">
+<section style="height: 400px;" class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/Subtentangkami.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>Milestone</h1>
+                    
                 </div>
                 <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Milestone</li>
-                  </ol>
+                 
                 </nav>
             </div>
         </div>
@@ -39,10 +35,10 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
-               <!--  <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
+              <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                     <div class="heading_s1 text-center">
                     <h2>Milestone</h2>
-                </div> -->
+                </div>
                 <div>
                     <img style="width: 100%;height: auto"src="<?php echo base_url()?>assets/frontend/campur/milestone-website.png" alt="struktur_organisasi"/>
                 </div>

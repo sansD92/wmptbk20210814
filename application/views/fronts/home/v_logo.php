@@ -2,7 +2,7 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-						<img src="<?php echo base_url()?>assets/frontend/campur/LOGOS.png" alt="image">
+						<img src="<?php echo base_url()?>assets/frontend/campur/logoperusahaan2.png" alt="image">
 
 						<!-- <ul class="list_none carousel_slide9 owl-carousel owl-theme" data-margin="15" data-dots="false" data-autoplay="false" data-nav="true" data-loop="false">
 							<?php  foreach ($posts_logo as $post_new){

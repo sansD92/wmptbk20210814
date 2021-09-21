@@ -15,19 +15,15 @@
 
 
 <!-- START SECTION BANNER -->
-<section  class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/Sub-Joglo2.png">
+<section  style="height:400px;" class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/Sub-Joglo2.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>Joglo Tumiyono</h1>
+                    
                 </div>
                 <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="<?php echo base_url()?>">Beranda</a></li>
-                    <li class="breadcrumb-item"><a>ESG</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Joglo Tumiyono</li>
-                  </ol>
+                 
                 </nav>
             </div>
         </div>

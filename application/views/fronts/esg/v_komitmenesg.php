@@ -15,7 +15,7 @@
 
 
 <!-- START SECTION BANNER -->
-<section  class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/subESGbew2.png">
+<section  style="height:400px;" class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/SUBESGREVISIv12.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -23,11 +23,7 @@
                    <!--  <h1>Komitmen ESG</h1> -->
                 </div>
                 <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="<?php echo base_url()?>">Beranda</a></li>
-                    <li class="breadcrumb-item"><a>ESG</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Komitmen ESG</li>
-                  </ol>
+                 
                 </nav>
             </div>
         </div>

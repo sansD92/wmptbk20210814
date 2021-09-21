@@ -14,19 +14,15 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/Subtentangkami.png">
+<section style="height: 400px;"class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/Subtentangkami.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <div style="    margin-top: -30px;"class="page-title">
-                    <h1>Profil Perusahaan</h1>
+                   
                 </div>
                 <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a>Tentang Kami</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Profil Perusahaan</li>
-                  </ol>
+                 
                 </nav>
                 <br><br><br>
             </div>

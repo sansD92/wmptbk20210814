@@ -20,8 +20,8 @@
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
-            	<div class="heading_s3">
-            		<h5></h5>
+            	<div class="heading_s1 text-center">
+                    <h2>Galeri</h2>
                 </div>
             </div>
         </div>
@@ -40,6 +40,12 @@
                     </li>
                     <li class="portfolio-item">
                         <a href="<?php echo base_url()?>assets\frontend\campur\gallery4.png"><img src="<?php echo base_url()?>assets\frontend\campur\gallery4.png" alt="image"></a>
+                    </li>
+                     <li class="portfolio-item">
+                        <a href="<?php echo base_url()?>assets\frontend\campur\GALLERYTAMBAHAN1.png"><img src="<?php echo base_url()?>assets\frontend\campur\GALLERYTAMBAHAN1.png" alt="image"></a>
+                    </li>
+                     <li class="portfolio-item">
+                        <a href="<?php echo base_url()?>assets\frontend\campur\GALLERYTAMBAHAN2.png"><img src="<?php echo base_url()?>assets\frontend\campur\GALLERYTAMBAHAN2.png" alt="image"></a>
                     </li>
 									
                 </ul>

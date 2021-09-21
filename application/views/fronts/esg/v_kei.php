@@ -14,19 +14,15 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/FOTO-SUB-MENUkei.png">
+<section style="height:400px;" class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/campur/FOTO-SUB-MENUkei.png">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                    <h1>Kesatriaan Entrepreneur Indonesia</h1>
+                   
                 </div>
                 <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a>ESG</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Kesatriaan Entrepreneur Indonesia</li>
-                  </ol>
+                  
                 </nav>
             </div>
         </div>

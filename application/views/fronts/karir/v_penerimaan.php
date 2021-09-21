@@ -14,19 +14,15 @@
 <!-- END HEADER -->
 
 <!-- START SECTION BANNER -->
-<section class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/title_bc.png">
+<section style="height: 400px;" class="background_bg breadcrumb_section overlay_bg2 page-title-light" data-img-src="<?php echo base_url()?>assets/frontend/title_bc.png">
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12 text-center">
             	<div class="page-title">
-            		<h1>Bergabung Bersama Kami</h1>
+            		
                 </div>
                 <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item"><a href="#">Beranda</a></li>
-                    <li class="breadcrumb-item"><a href="#">Karir</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Bergabung Bersama Kami</li>
-                  </ol>
+                 
                 </nav>
             </div>
         </div>
@@ -40,7 +36,7 @@
          <div class="row justify-content-center">
             <div class="col-md-6 animation" data-animation="fadeInUp" data-animation-delay="0.2s">
                 <div class="heading_s1 text-center">
-                    <h2>Mulai Kariermu Bersama Kami</h2>
+                    <h2>Bergabung Bersama Kami</h2>
                 </div>
 
             </div>
