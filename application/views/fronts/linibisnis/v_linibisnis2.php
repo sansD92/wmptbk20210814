@@ -65,8 +65,8 @@
 
         </div>
     </div>
-</section> -->
-<section class="small_pb">
+</section>
+<section class="small_pb d-none d-sm-block">
     <div class="container">
       <?php
                        foreach ($linibisniskategori->result_array() as $r) {
@@ -135,7 +135,7 @@
 </section>
  -->
 <!-- START SECTION ABOUT US -->
-<!-- <section class='small_pb overflow_hide'>
+<section class='small_pb overflow_hide d-block d-sm-none'>
     <div class='container'>
        <?php
                         foreach ($linibisniskategori->result_array() as $r) {
@@ -175,7 +175,7 @@
 
                             <?php }  ?>
     </div>
-</section> -->
+</section>
 <!-- END SECTION ABOUT US -->
 
 
