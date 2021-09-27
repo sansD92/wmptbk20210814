@@ -27,8 +27,8 @@
                         <li><a href="<?php echo $identitas->instagram?>" target="_blank"><i class="ion-social-instagram-outline"></i></a></li>
                         <li><a href="<?php echo $identitas->facebook?>" target="_blank"><i class="ion-social-facebook"></i></a></li>
                          <li><a href="https://www.linkedin.com/in/pt-widodo-makmur-perkasa-118b5a12b/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-                         <li><a href="#">ENG</a></li>
-                         <li><a href="#">IND</a></li>
+                         <li><a href="<?php echo base_url()?>eng/home">ENG</a></li>
+                         <li><a href="<?php echo base_url()?>ind">IND</a></li>
                        <!-- <div class="col-md-3 col-sm-4 col-3">
 
                     <div class="lng_dropdown lng_dropdown_white float-right mr-sm-3">
@@ -168,7 +168,7 @@
 
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tata Kelola</a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown-menu ">
                         <ul>
                            <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Tata Kelola</a>
                                     <div class="dropdown-menu">
@@ -191,7 +191,7 @@
                                 </li> -->
 
                                  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Sekilas GCG</a>
-                                    <div class="dropdown-menu">
+                                    <div class="dropdown-menu dropdown-reverse">
                                         <ul>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_bod">Piagam BOD</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_komisaris" >Piagam Dewan Komisaris</a></li>

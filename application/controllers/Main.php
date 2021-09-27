@@ -88,20 +88,22 @@ class Main extends CI_Controller {
 		}
 
 		if (is_numeric($dari)) {
-				$config['per_page'] = 6;
-				$data['status']   = 'active';
+			$config['per_page'] = 6;
+			$data['status']   = 'active';
 		  $data['status_produk']   = '';
-				$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
-				$data['posts']= $this->Crud_m->view_one_limit('blogs','blogs_status','blogs_id','desc',$dari,$config['per_page']);
+			$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+			$data['posts']= $this->Crud_m->view_one_limit('blogs','blogs_status','blogs_id','desc',$dari,$config['per_page']);
 		  $data['posts_logo']= $this->Crud_m->view_one_limit('logo','logo_status','logo_urutan','ASC',$dari,'20');
 		  $data['posts_slider'] = $this->Crud_m->view_one_limit('slider','slider_status','slider_id','ASC',$dari,$config['per_page_slider']);
 		  $data['posts_bisnis'] = $this->Crud_m->view_one_limit('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC',$dari,'10');
-		}else{
+      $data['posts_blogs'] = $this->db->query("select * from blogs a join blogs_kategori b on a.blogs_kategori_id = b.blogs_kategori_id  where   a.blogs_status = 'publish' and (a.blogs_kategori_id = '1' or a.blogs_kategori_id = '2' or a.blogs_kategori_id = '3') ORDER BY  blogs_id desc
+			")->result();
+    }else{
 			redirect('main/main_eng');
 		}
-		$this->load->view('fronts/index_eng',$data);
+		$this->load->view('fronts_eng/index',$data);
 	}
-	
+
   public function bisnis_eng($id)
 	{
 

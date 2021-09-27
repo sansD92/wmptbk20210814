@@ -24,10 +24,21 @@
 
                 </li> -->
                         <li><a href="<?php echo $identitas->youtube?>" target="_blank"><i class="ion-social-youtube-outline"></i></a></li>
-                        <li><a href="<?php echo $identitas->facebook?>" target="_blank"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="<?php echo $identitas->instagram?>" target="_blank"><i class="ion-social-instagram-outline"></i></a></li>
+                        <li><a href="<?php echo $identitas->facebook?>" target="_blank"><i class="ion-social-facebook"></i></a></li>
                          <li><a href="https://www.linkedin.com/in/pt-widodo-makmur-perkasa-118b5a12b/" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-                        <li><a href="<?php echo base_url()?>ind"><img height="13px" src="<?php echo base_url()?>assets/frontend/id_flag.png" title="Indonesian"></a></li>
+                         <li><a href="<?php echo base_url()?>eng/home">ENG</a></li>
+                         <li><a href="<?php echo base_url()?>ind">IND</a></li>
+                       <!-- <div class="col-md-3 col-sm-4 col-3">
+
+                    <div class="lng_dropdown lng_dropdown_white float-right mr-sm-3">
+                        <select name="countries" id="lng_select">
+                            <option value='id' data-image="demo-medical/images/fn.png" data-title="France">IND</option>
+                            <option value='en' data-image="<?php echo base_url()?>assets/frontend/eng.png" data-title="English"><a href="<?php echo base_url()?>main_eng"><img height="13px" src="<?php echo base_url()?>assets/frontend/uk_flag.png" title="English">EN</a></option>
+
+                        </select>
+                    </div>
+                </div> -->
                     </ul>
                 </div>
             </div>
@@ -42,7 +53,7 @@
 
   <div class="container " >
     <nav class="navbar navbar-expand-lg">
-    	<a class="navbar-brand" href="<?php echo base_url()?>eng/home">
+    	<a class="navbar-brand" href="<?php echo base_url()?>">
 			<img class="logo_light" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->logo?>" alt="logo" />
             <img class="logo_dark" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->logo?>" alt="logo" />
             <img class="logo_default" src="<?php echo base_url()?>assets/frontend/campur/<?php echo $identitas->logo?>" alt="logo" />
@@ -51,7 +62,7 @@
       	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link " href="<?php echo base_url()?>eng/home"><span style="font-weight: 800;" class="ti-home"></span></a>
+                    <a class="nav-link " href="<?php echo base_url()?>"><span style="font-weight: 800;" class="ti-home"></span></a>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">About Us</a>
@@ -60,9 +71,9 @@
                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Company Profile</a>
                                     <div class="dropdown-menu">
                                         <ul>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/about-us">Profile</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/visimisi">Mission Philosophy</a></li>
-                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/milestone">Milestone WMP</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tentangkami">Profile</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>visimisi">Mission Philosophy</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>milestone">Milestone WMP</a></li>
 
                                         </ul>
                                     </div>
@@ -72,22 +83,19 @@
                                 <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>motto">MOTTO WMP</a></li> -->
 
 
-                                <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/commissioners-directors">Board of Commissioners & Directors</a></li> -->
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Board of Commissioners & Directors</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>komisaris-direksi">Board of Commissioners & Directors</a></li>
                                <!--  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>direksi">Dewan Direksi</a></li> -->
-                                <!-- <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/companystructure">Company & Organization Structure</a></li>
-                                  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/product">Product</a></li> -->
-                                <li><a  class="dropdown-item nav-link nav_item" href="#">Company & Organization Structure</a></li>
-                                  <li><a  class="dropdown-item nav-link nav_item" href="#">Product</a></li>
+                                <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>strukturcompany">Company & Organization Structure</a></li>
+                                  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk">Product</a></li>
 
-                                <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Product</a>
+                                <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Produk</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk1">Sapi</a></li>
                             <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">Daging Sapi</a></li>
-                            <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Product Olahan</a></li>
+                            <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Produk Olahan</a></li>
                             <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk4">Kulit</a></li>
-                            <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">Product Ayam</a></li>
+                            <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">Produk Ayam</a></li>
                             <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk6">Komoditas</a></li>
 
                                         </ul>
@@ -106,21 +114,20 @@
                     <div class="dropdown-menu">
                         <ul>
                           <?php  foreach ($posts_bisnis as $post_new){ ?>
-                            <!-- <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url("linibisnis/kategori_eng/$post_new->bisnis_kategori_judul_seo") ?>"><?php echo $post_new->bisnis_kategori_judul?></a></li> -->
-                            <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#"><?php echo $post_new->bisnis_kategori_judul?></a></li>
+                            <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url("linibisnis/kategori/$post_new->bisnis_kategori_judul_seo") ?>"><?php echo $post_new->bisnis_kategori_judul?></a></li>
                           <?php } ?>
                         </ul>
                     </div>
                 </li>
              <!--    <li class="dropdown">
-                    <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Product</a>
+                    <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Produk</a>
                     <div class="dropdown-menu">
                         <ul >
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk1">Sapi</a></li>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk2">Daging Sapi</a></li>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Product Olahan</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk3">Produk Olahan</a></li>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk4">Kulit</a></li>
-                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">Product Ayam</a></li>
+                            <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk5">Produk Ayam</a></li>
                             <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>produk6">Komoditas</a></li>
                         </ul>
                     </div>
@@ -155,7 +162,7 @@
                         </ul>
                     </div>
                 </li> -->
-                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/investor-relationship">Investor Relationship</a></li>
+                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungan-investor">Investor Relationship</a></li>
 
 
 
@@ -163,25 +170,17 @@
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Governance</a>
                     <div class="dropdown-menu">
                         <ul>
-                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Governance</a>
+                           <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Tata Kelola</a>
                                     <div class="dropdown-menu">
                                         <ul>
-                                            <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/sekilas_gcg_eng">GCG Overview</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/penerapan_gcg_eng" >GCG Implementation</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pengendalian_gratifikasi_eng">Gratuity Control</a></li>
-                                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#" >Business Ethics</a>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/sekilas_gcg">Sekilas GCG</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/penerapan_gcg" >Penerapan GCG</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pengendalian_gratifikasi">Pengendalian Gratifikasi</a></li>
+                                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#" >Etika Bisnis</a>
                                               <div class="dropdown-menu dropdown-reverse">
                                                   <ul>
-                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/etikabisnis_pemasok_eng">WMP Supplier Code of Conduct</a></li>
-                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/kebijakan_kreditur_eng">WMP Creditor Policy and Vendor Selection</a></li> -->
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">GCG Overview</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#" >GCG Implementation</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Gratuity Control</a></li>
-                                            <li><a class="dropdown-item menu-link dropdown-toggler" href="#" >Business Ethics</a>
-                                              <div class="dropdown-menu dropdown-reverse">
-                                                  <ul>
-                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">WMP Supplier Code of Conduct</a></li>
-                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">WMP Creditor Policy and Vendor Selection</a></li>
+                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/etikabisnis_pemasok">Kode Etik Pemasok WMP</a></li>
+                                                  <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/kebijakan_kreditur">Kebijakan Kreditur dan Seleksi Vendor WMP</a></li>
 
                                                   </ul>
                                               </div>
@@ -189,8 +188,37 @@
 
                                         </ul>
                                     </div>
+                                </li> -->
+
+                                 <li><a class="dropdown-item menu-link dropdown-toggler" href="#">GCG Overview</a>
+                                    <div class="dropdown-menu dropdown-reverse">
+                                        <ul>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_bod">BOD Charter</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_komisaris" >Board of Commissioners Charter</a></li>
+                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedoman_komite" >Nomination & Remuneration Committee Guidelines</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_corporate" >Corporate Secretary Charter</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_audit" >Internal Audit Charter</a></li>
+                                               <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/piagam_komiteaudit" >Audit Committee Charter</a></li>
+
+
+                                        </ul>
+                                    </div>
                                 </li>
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Directors Work Guidelines</a></li>
+
+                                <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Work Guidelines</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_kodeetikwmp">Code of Ethics</a></li>
+                                            <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_kodeetikpemasok" >Kode etik pemasok</a></li> -->
+                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_manajemenresiko" >Risk management policy</a></li>
+                                             <!--  <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_kebijakankreditur" >Kebijakan Kreditur dan Kebijakan Seleksi<br> Pemasok atau Vendor</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_kebijakanseleksi" >Kebijakan tentang Seleksi dan peningkatkan<br> kemampuan pemasok atau vendor</a></li>
+                                               <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_kebijakanantikorupsi" >Kebijakan Anti-Korupsi dan Anti-Fraud</a></li> -->
+                                              <!--  <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>tatakelola/pedomankerja_whistleblowing" >Whistleblowing</a></li> -->
+
+                                        </ul>
+                                    </div>
+                                </li>
 
                              <!--   <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Sistem manajemen</a>
                                     <div class="dropdown-menu">
@@ -222,10 +250,11 @@
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">ESG</a>
                     <div class="dropdown-menu">
                         <ul>
-                             <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/esg/joglo-tumiyono">Joglo Tumiyono</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/esg/kei">KEI Foundation</a></li> -->
-                             <li><a class="dropdown-item nav-link nav_item" href="#">Joglo Tumiyono</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">KEI Foundation</a></li>
+                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/komitmenesg">ESG Commitment</a></li>
+                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/joglo-tumiyono">Joglo Tumiyono</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/kei">Kesatriaan Entrepreneur Indonesia</a></li>
+                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>esg/tahfidzwidodomakmursulaimaniyah">Pesantren Widodo Makmur Sulaimaniyah
+</a></li>
                            <!--  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Program CSR</a>
                                     <div class="dropdown-menu">
                                         <ul>
@@ -257,21 +286,18 @@
                                     <div class="dropdown-menu dropdown-reverse">
                                         <ul>
                                              <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>ikhtisar-hc">Ikhtisar</a></li> -->
-                            <!-- <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/recruitment">Join Us</a></li> -->
-                            <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="#">Join Us</a></li>
+                            <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>penerimaan-pegawai">Join us</a></li>
                            <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="#">Workshop dan Pelatihan</a></li> -->
-                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Our Programs</a></li>
-                            <!-- <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/contact-us-career">Contact Us</a></li> -->
-                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Contact Us</a></li>
+                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>program-kami">Our Programs</a></li>
+                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>hubungi-kami-karir">Contact us</a></li>
 
                                         </ul>
                                     </div>
                                 </li>
-                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Company Activities</a></li>
-                             
+                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>informasi/kegiatan_perusahaan">Company Activities</a></li>
+
                              <!-- <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>informasi/faq">FAQ</a></li> -->
-                             <!-- <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/gallery-information">Gallery</a></li> -->
-                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Gallery</a></li>
+                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>informasi/gallery">Gallery</a></li>
                             <!--  <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>informasi/faq">FAQ</a></li> -->
 
                            <!--  <li><a style="text-transform: uppercase;" class="dropdown-item nav-link nav_item" href="https://www.youtube.com/channel/UCfXFjK_ot0iaQ41TgEHneSg" target="_blank">Youtube WMP</a></li> -->
