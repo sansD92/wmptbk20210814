@@ -31,7 +31,7 @@
                     <div class="inner">
 
                       				<p></p>
-                              <a href="<?php echo base_url("linibisnis/kategori/$post_new->bisnis_kategori_judul_seo") ?>" class="btn btn-outline-white">More</a>
+                              <a href="#" class="btn btn-outline-white">More</a>
         						</div>
                 </div>
 				      </div>

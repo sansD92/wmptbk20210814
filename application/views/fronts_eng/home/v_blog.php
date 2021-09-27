@@ -22,7 +22,7 @@
                     <div class="items">
                         <div class="blog_post blog_style1">
                             <div class="blog_img">
-                                <a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>">
+                                <a href="#">
                                    <?php
                                                              if(empty($post_new->blogs_gambar)) {
                                                                echo "<img src='".base_url()."assets/images/blog_small_img1_350X198.jpg'>";
@@ -34,7 +34,7 @@
                             <div class="blog_content bg-white">
                                 <p><i class="ion-calendar"></i> <?php echo tgl_indo($post_new->blogs_post_tanggal)?></p>
                                 <div class="blog_text">
-                                    <h6 class=""><a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><?php echo $judul?></a>
+                                    <h6 class=""><a href="#"><?php echo $judul?></a>
                                   </h6>
 
                                 </div>
