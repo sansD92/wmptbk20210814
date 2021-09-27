@@ -123,7 +123,7 @@ public function strukturorganisasi()
 
 
 
-  $this->load->view('fronts/tentangkami/v_profil_perusahaan_eng',$data);
+  $this->load->view('fronts_eng/aboutus/v_profil_perusahaan_eng',$data);
 }
   public function visimisi_eng()
 {
@@ -135,7 +135,7 @@ public function strukturorganisasi()
 
 
 
-  $this->load->view('fronts/tentangkami/v_visimisi_eng',$data);
+  $this->load->view('fronts_eng/aboutus/v_visimisi_eng',$data);
 }
 
 public function motto_eng()
@@ -160,7 +160,7 @@ public function motto_eng()
 
 
 
-  $this->load->view('fronts/tentangkami/v_milestone_eng',$data);
+  $this->load->view('fronts_eng/aboutus/v_milestone_eng',$data);
 }
 public function komisaris_eng()
 {
