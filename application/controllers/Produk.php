@@ -16,7 +16,7 @@ public function index()
       $data['status']   = 'active';
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
-        $data['produks'] = $this->db->query("select * from produk   ORDER BY  urutan_produk asc ")->result();
+      $data['produks'] = $this->db->query("select * from produk   ORDER BY  urutan_produk asc ")->result();
 
 
 
@@ -159,7 +159,6 @@ public function index_eng()
       $data['status']   = 'active';
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
-      $data['posts_produk'] = $this->Crud_m->get_all_produk();
       $data['produks'] = $this->db->query("select * from produk   ORDER BY  urutan_produk asc ")->result();
   $this->load->view('fronts_eng/produk/v_index',$data);
 }

@@ -159,7 +159,7 @@ public function komisaris_eng()
 
 
 
-  $this->load->view('fronts_eng/tentangkami/v_dewankomisaris',$data);
+  $this->load->view('fronts_eng/aboutus/v_dewankomisaris',$data);
 }
 public function strukturcompany_eng()
 {
@@ -170,7 +170,7 @@ public function strukturcompany_eng()
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
 
-  $this->load->view('fronts_eng/tentangkami/v_strukturcompany',$data);
+  $this->load->view('fronts_eng/aboutus/v_strukturcompany',$data);
 
 
 
