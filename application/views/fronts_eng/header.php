@@ -84,9 +84,23 @@
                                 <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>motto">MOTTO WMP</a></li> -->
 
 
+<<<<<<< Updated upstream
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/commissioners-directors">Board of Commissioners & Directors</a></li>
                                 <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/companystructure">Organization Structure</a></li>
                                 <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/product">Products</a></li>
+=======
+
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/commissioners-directors">Board of Commissioners & Directors</a></li>
+
+                                <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/companystructure">Organization Structure</a></li>
+                                  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/product">Product</a></li>
+
+<!-- 
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Board of Commissioners & Directors</a></li>
+                             
+                                <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/companystructure">Organization Structure</a></li>
+                                  <li><a  class="dropdown-item nav-link nav_item" href="#">Product</a></li> -->
+>>>>>>> Stashed changes
 
                             </ul>
                         </div>
