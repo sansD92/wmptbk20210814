@@ -49,7 +49,13 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Deskripsi ID</label>
+                        <textarea class="textarea"  name ="bisnis_kategori_desk" style="width: 100%; height: 100px;"><?php echo $rows['bisnis_kategori_desk'] ?></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
                       <div class="form-group">
                         <label>Deskripsi</label>
                         <textarea class="textarea"  name ="bisnis_kategori_desk" style="width: 100%; height: 100px;"><?php echo $rows['bisnis_kategori_desk'] ?></textarea>

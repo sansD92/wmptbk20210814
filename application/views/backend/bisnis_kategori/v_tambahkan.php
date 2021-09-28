@@ -49,25 +49,43 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Deskripsi</label>
+                        <label>Deskripsi ID</label>
                         <textarea class="textarea"  name ="bisnis_kategori_desk" style="width: 100%; height: 100px;"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Deskripsi ENG</label>
+                        <textarea class="textarea"  name ="bisnis_kategori_desk_eng" style="width: 100%; height: 100px;"></textarea>
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Meta Deskripsi</label>
+                        <label>Meta Deskripsi ID</label>
                         <input type="text" class="form-control" name="bisnis_kategori_meta_desk" placeholder="Meta description">
                       </div>
                     </div>
-                    <div class="col-sm-12">
-                      <!-- text input -->
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Kata Kunci</label>
+                        <label>Meta Deskripsi ENG</label>
+                        <input type="text" class="form-control" name="bisnis_kategori_meta_desk_eng" placeholder="Meta description">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Kata Kunci ID</label>
                         <input type="text" class="form-control tags" id="blogs_keyword" value="" name="bisnis_kategori_keyword"  data-role="tagsinput"/>
+                          <?php foreach ($tag as $tag){    } ?>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Kata Kunci ENG</label>
+                        <input type="text" class="form-control tags" id="blogs_keyword" value="" name="bisnis_kategori_keyword_eng"  data-role="tagsinput"/>
                           <?php foreach ($tag as $tag){    } ?>
                       </div>
                     </div>
