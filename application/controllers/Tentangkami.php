@@ -169,15 +169,11 @@ public function strukturcompany_eng()
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
-<<<<<<< Updated upstream
-  $this->load->view('fronts_eng/tentangkami/v_strukturcompany',$data);
-
-=======
-
 
   $this->load->view('fronts_eng/tentangkami/v_strukturcompany',$data);
-  $this->load->view('fronts_eng/aboutus/v_strukturcompany_eng',$data);
->>>>>>> Stashed changes
+
+
+
 }
 
 }
