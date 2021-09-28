@@ -62,7 +62,7 @@
       	<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="dropdown dropdown-mega-menu">
-                    <a class="nav-link " href="<?php echo base_url()?>"><span style="font-weight: 800;" class="ti-home"></span></a>
+                    <a class="nav-link " href="<?php echo base_url()?>eng/home"><span style="font-weight: 800;" class="ti-home"></span></a>
                 </li>
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">About Us</a>
@@ -84,12 +84,12 @@
                                 <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>motto">MOTTO WMP</a></li> -->
 
 
-                                <li><a class="dropdown-item nav-link nav_item" href="#">Board of Commissioners & Directors</a></li>
-                             
-                                <li><a  class="dropdown-item nav-link nav_item" href="#">Company & Organization Structure</a></li>
-                                  <li><a  class="dropdown-item nav-link nav_item" href="#">Product</a></li>
+                                <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/commissioners-directors">Board of Commissioners & Directors</a></li>
 
-                              
+                                <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/companystructure">Organization Structure</a></li>
+                                  <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/product">Product</a></li>
+
+
                             </ul>
                         </div>
                 </li>
@@ -106,7 +106,7 @@
                         </ul>
                     </div>
                 </li>
-          
+
                  <li><a class="dropdown-item nav-link nav_item" href="#">Investor Relationship</a></li>
 
 
@@ -115,7 +115,7 @@
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Governance</a>
                     <div class="dropdown-menu">
                         <ul>
-                          
+
 
                                  <li><a class="dropdown-item menu-link dropdown-toggler" href="#">GCG Overview</a>
                                     <div class="dropdown-menu dropdown-reverse">
@@ -136,15 +136,15 @@
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li><a class="dropdown-item nav-link nav_item" href="#">Code of Ethics</a></li>
-                                          
+
                                              <li><a class="dropdown-item nav-link nav_item" href="#" >Risk management policy</a></li>
-                                            
+
 
                                         </ul>
                                     </div>
                                 </li>
 
-                            
+
                         </ul>
                     </div>
 
@@ -163,7 +163,7 @@
                     </div>
                 </li>
 
-             
+
 
                 <li class="dropdown">
                     <a class="dropdown-toggle nav-link " href="#" data-toggle="dropdown">Information</a>
@@ -172,9 +172,9 @@
                             <li><a class="dropdown-item menu-link dropdown-toggler" href="#">Career</a>
                                     <div class="dropdown-menu dropdown-reverse">
                                         <ul>
-                                            
+
                             <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="#">Join us</a></li>
-                         
+
                             <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Our Programs</a></li>
                             <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Contact us</a></li>
 
@@ -183,16 +183,16 @@
                                 </li>
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Company Activities</a></li>
 
-                             
+
                              <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Gallery</a></li>
-                         
+
 
                         </ul>
                     </div>
                 </li>
 
 
-           
+
             </ul>
         </div>
         <ul class="navbar-nav attr-nav align-items-center">

@@ -2483,11 +2483,15 @@ class Aspanel extends CI_Controller {
 					if ($hasil22['file_name']==''){
 									$data = array(
 										'nama_komisaris'=>$this->input->post('nama_komisaris'),
+										'jabatan_komisaris_eng'=>$this->input->post('jabatan_komisaris_eng'),
+										'deskripsi_jabatan_eng'=>$this->input->post('deskripsi_jabatan_eng'),
 										'jabatan_komisaris'=>$this->input->post('jabatan_komisaris'),
 										'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'));
 											}else{
 												$data = array(
 													'nama_komisaris'=>$this->input->post('nama_komisaris'),
+													'jabatan_komisaris_eng'=>$this->input->post('jabatan_komisaris_eng'),
+													'deskripsi_jabatan_eng'=>$this->input->post('deskripsi_jabatan_eng'),
 													'jabatan_komisaris'=>$this->input->post('jabatan_komisaris'),
 													'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'),
 													'foto_komisaris'=>$hasil22['file_name']);
@@ -2544,6 +2548,8 @@ class Aspanel extends CI_Controller {
 						if ($hasil22['file_name']==''){
 										$data = array(
 											'nama_komisaris'=>$this->input->post('nama_komisaris'),
+											'jabatan_komisaris_eng'=>$this->input->post('jabatan_komisaris_eng'),
+											'deskripsi_jabatan_eng'=>$this->input->post('deskripsi_jabatan_eng'),
 											'jabatan_komisaris'=>$this->input->post('jabatan_komisaris'),
 											'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'));
 											$where = array('id_komisaris' => $this->input->post('id_komisaris'));
@@ -2551,6 +2557,8 @@ class Aspanel extends CI_Controller {
 						}else{
 										$data = array(
 											'nama_komisaris'=>$this->input->post('nama_komisaris'),
+											'jabatan_komisaris_eng'=>$this->input->post('jabatan_komisaris_eng'),
+											'deskripsi_jabatan_eng'=>$this->input->post('deskripsi_jabatan_eng'),
 											'jabatan_komisaris'=>$this->input->post('jabatan_komisaris'),
 											'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'),
 											'foto_komisaris'=>$hasil22['file_name']);
@@ -2717,11 +2725,15 @@ class Aspanel extends CI_Controller {
 					if ($hasil22['file_name']==''){
 									$data = array(
 										'nama_direksi'=>$this->input->post('nama_direksi'),
+										'jabatan_direksi_eng'=>$this->input->post('jabatan_direksi_eng'),
+										'deskripsi_jabatan_eng'=>$this->input->post('deskripsi_jabatan_eng'),
 										'jabatan_direksi'=>$this->input->post('jabatan_direksi'),
 										'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'));
 											}else{
 												$data = array(
 													'nama_direksi'=>$this->input->post('nama_direksi'),
+													'jabatan_direksi_eng'=>$this->input->post('jabatan_direksi_eng'),
+													'deskripsi_jabatan_eng'=>$this->input->post('deskripsi_jabatan_eng'),
 													'jabatan_direksi'=>$this->input->post('jabatan_direksi'),
 													'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'),
 													'foto_direksi'=>$hasil22['file_name']);
@@ -2778,6 +2790,8 @@ class Aspanel extends CI_Controller {
 						if ($hasil22['file_name']==''){
 										$data = array(
 											'nama_direksi'=>$this->input->post('nama_direksi'),
+											'jabatan_direksi_eng'=>$this->input->post('jabatan_direksi_eng'),
+											'deskripsi_jabatan_eng'=>$this->input->post('deskripsi_jabatan_eng'),
 											'jabatan_direksi'=>$this->input->post('jabatan_direksi'),
 											'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'));
 											$where = array('id_direksi' => $this->input->post('id_direksi'));
@@ -2785,6 +2799,8 @@ class Aspanel extends CI_Controller {
 						}else{
 										$data = array(
 											'nama_direksi'=>$this->input->post('nama_direksi'),
+											'jabatan_direksi_eng'=>$this->input->post('jabatan_direksi_eng'),
+											'deskripsi_jabatan_eng'=>$this->input->post('deskripsi_jabatan_eng'),
 											'jabatan_direksi'=>$this->input->post('jabatan_direksi'),
 											'deskripsi_jabatan'=>$this->input->post('deskripsi_jabatan'),
 											'foto_direksi'=>$hasil22['file_name']);

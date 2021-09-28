@@ -49,18 +49,30 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Jabatan</label>
-                        <input type="text" class="form-control" name="jabatan_direksi" placeholder="Menjabat sebagai">
+                        <label>Jabatan ID</label>
+                        <input type="text" class="form-control" name="jabatan_direksi" placeholder="Jabatan Bahasa Indonesia">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Jabatan ENG</label>
+                        <input type="text" class="form-control" name="jabatan_direksi_eng" placeholder="Jabatan Bahasa English">
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Deskripsi</label>
+                        <label>Deskripsi ID</label>
                         <textarea class="textarea"  name ="deskripsi_jabatan" style="width: 100%; height: 100px;"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Deskripsi ENG</label>
+                        <textarea class="textarea"  name ="deskripsi_jabatan_eng" style="width: 100%; height: 100px;"></textarea>
                       </div>
                     </div>
 

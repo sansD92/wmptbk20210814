@@ -50,18 +50,30 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Jabatan</label>
+                        <label>Jabatan ID</label>
                         <input type="text" class="form-control" name="jabatan_direksi" value="<?php echo $rows['jabatan_direksi'] ?>">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Jabatan ENG</label>
+                        <input type="text" class="form-control" name="jabatan_direksi_eng" value="<?php echo $rows['jabatan_direksi_eng'] ?>">
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Deskripsi</label>
+                        <label>Deskripsi ID</label>
                         <textarea class="textarea"  name ="deskripsi_jabatan" style="width: 100%; height: 100px;"><?php echo $rows['deskripsi_jabatan'] ?></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Deskripsi ENG</label>
+                        <textarea class="textarea"  name ="deskripsi_jabatan_eng" style="width: 100%; height: 100px;"><?php echo $rows['deskripsi_jabatan_eng'] ?></textarea>
                       </div>
                     </div>
                     <div class="col-sm-12">
