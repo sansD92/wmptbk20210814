@@ -64,6 +64,7 @@ $route['eng/about-us'] = "Tentangkami/profil_perusahaan_eng";
 $route['eng/visimisi'] = "Tentangkami/visimisi_eng";
 $route['eng/milestone'] = "Tentangkami/milestone_eng";
 $route['eng/esg/joglo-tumiyono'] = "Esg/joglo_eng";
+$route['eng/esg/twms'] = "Esg/twms_eng";
 $route['eng/esg/kei'] = "Esg/kei_eng";
 $route['eng/motto'] = "Tentangkami/motto_eng";
 $route['eng/commissioners-directors'] = "Tentangkami/komisaris_eng";

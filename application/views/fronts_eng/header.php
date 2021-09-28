@@ -74,7 +74,7 @@
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/about-us">Profile</a></li>
                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/visimisi">Vision and Mission
 </a></li>
-                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/milestone">Milestone WMP</a></li>
+                                              <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/milestone">WMP Milestone</a></li>
 
                                         </ul>
                                     </div>
@@ -84,11 +84,18 @@
                                 <!-- <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>motto">MOTTO WMP</a></li> -->
 
 
+<<<<<<< Updated upstream
                                 <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/commissioners-directors">Board of Commissioners & Directors</a></li>
 
                                 <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/companystructure">Organization Structure</a></li>
                                   <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/product">Product</a></li>
 
+=======
+                                <li><a class="dropdown-item nav-link nav_item" href="#">Board of Commissioners & Directors</a></li>
+                             
+                                <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/companystructure">Organization Structure</a></li>
+                                  <li><a  class="dropdown-item nav-link nav_item" href="#">Product</a></li>
+>>>>>>> Stashed changes
 
                             </ul>
                         </div>
@@ -155,9 +162,9 @@
                     <div class="dropdown-menu">
                         <ul>
                             <li><a class="dropdown-item nav-link nav_item" href="#">ESG Commitment</a></li>
-                             <li><a class="dropdown-item nav-link nav_item" href="#">Joglo Tumiyono</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="#">Kesatriaan Entrepreneur Indonesia</a></li>
-                                             <li><a class="dropdown-item nav-link nav_item" href="#">Pesantren Widodo Makmur Sulaimaniyah
+                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/esg/joglo-tumiyono">Joglo Tumiyono</a></li>
+                                            <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/esg/kei">Kesatriaan Entrepreneur Indonesia</a></li>
+                                             <li><a class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/esg/twms">Pesantren Widodo Makmur Sulaimaniyah
 </a></li>
                         </ul>
                     </div>

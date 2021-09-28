@@ -74,7 +74,7 @@ $this->load->view('fronts/esg/v_tahfidzwidodomakmursulaimaniyah',$data);
 
 
 
-  $this->load->view('fronts/esg/v_kei_eng',$data);
+  $this->load->view('fronts_eng/esg/v_kei_eng',$data);
 }
 
 public function joglo_eng()
@@ -87,6 +87,18 @@ public function joglo_eng()
 
 
 
-$this->load->view('fronts/esg/v_joglo_eng',$data);
+$this->load->view('fronts_eng/esg/v_joglo_eng',$data);
+}
+public function twms_eng()
+{
+
+   $data['status']   = 'active';
+   $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+   $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+   $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+
+
+
+$this->load->view('fronts_eng/esg/v_tahfidzwidodomakmursulaimaniyah_eng',$data);
 }
 }
