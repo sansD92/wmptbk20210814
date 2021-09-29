@@ -65,27 +65,40 @@
 
                   </div>
                 </div></div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>URL</label>
+                      <input type="text" class="form-control" name="bisnis_url" value="<?php echo $rows['bisnis_url'] ?>">
+                    </div>
+                  </div>
+                </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Deskripsi</label>
+                        <label>Deskripsi ID</label>
                         <textarea class="textarea"  name ="bisnis_desk" style="width: 100%; height: 100px;"><?php echo $rows['bisnis_desk'] ?></textarea>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>URL</label>
-                        <input type="text" class="form-control" name="bisnis_url" value="<?php echo $rows['bisnis_url'] ?>">
+                        <label>Deskripsi ENG</label>
+                        <textarea class="textarea"  name ="bisnis_desk_eng" style="width: 100%; height: 100px;"><?php echo $rows['bisnis_desk_eng'] ?></textarea>
                       </div>
                     </div>
                   </div>
+
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Meta Deskripsi</label>
+                        <label>Meta Deskripsi ID</label>
                         <input type="text" class="form-control" name="bisnis_meta_desk" value="<?php echo $rows['bisnis_meta_desk'] ?>">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Meta Description ENG</label>
+                        <input type="text" class="form-control" name="bisnis_meta_desk_eng" value="<?php echo $rows['bisnis_meta_desk_eng'] ?>">
                       </div>
                     </div>
                     <div class="col-sm-12">

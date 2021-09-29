@@ -65,27 +65,40 @@
 
                   </div>
                 </div></div>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form-group">
+                      <label>URL</label>
+                      <input type="text" class="form-control" name="bisnis_url" placeholder="URL">
+                    </div>
+                  </div>
+                </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Deskripsi</label>
+                        <label>Deskripsi ID</label>
                         <textarea class="textarea"  name ="bisnis_desk" style="width: 100%; height: 100px;"></textarea>
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>URL</label>
-                        <input type="text" class="form-control" name="bisnis_url" placeholder="URL">
+                        <label>Deskripsi ENG</label>
+                        <textarea class="textarea"  name ="bisnis_desk_eng" style="width: 100%; height: 100px;"></textarea>
                       </div>
                     </div>
                   </div>
+
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Meta Deskripsi</label>
-                        <input type="text" class="form-control" name="bisnis_meta_desk" placeholder="Meta description">
+                        <label>Meta Deskripsi ID</label>
+                        <input type="text" class="form-control" name="bisnis_meta_desk" placeholder="Meta deskripsi">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Meta Deskripsi ENG</label>
+                        <input type="text" class="form-control" name="bisnis_meta_desk_eng" placeholder="Meta description english">
                       </div>
                     </div>
                     <div class="col-sm-12">

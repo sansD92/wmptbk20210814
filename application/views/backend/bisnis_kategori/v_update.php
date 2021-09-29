@@ -57,16 +57,22 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Deskripsi</label>
-                        <textarea class="textarea"  name ="bisnis_kategori_desk" style="width: 100%; height: 100px;"><?php echo $rows['bisnis_kategori_desk'] ?></textarea>
+                        <label>Deskripsi ENG</label>
+                        <textarea class="textarea"  name ="bisnis_kategori_desk_eng" style="width: 100%; height: 100px;"><?php echo $rows['bisnis_kategori_desk_eng'] ?></textarea>
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Meta Deskripsi</label>
+                        <label>Meta Deskripsi ID</label>
                         <input type="text" class="form-control" name="bisnis_kategori_meta_desk" value="<?php echo $rows['bisnis_kategori_meta_desk'] ?>">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Meta Deskripsi ENG</label>
+                        <input type="text" class="form-control" name="bisnis_kategori_meta_desk_eng" value="<?php echo $rows['bisnis_kategori_meta_desk_eng'] ?>">
                       </div>
                     </div>
                     <div class="col-sm-12">

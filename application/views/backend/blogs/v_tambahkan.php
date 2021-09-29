@@ -39,28 +39,62 @@
             echo form_open_multipart('aspanel/blogs_tambahkan',$attributes); ?>
               <div class="card-body">
                 <div class="form-group">
-
                   <div class="row">
                     <div class="col-sm-12">
+                  <div class="form-group">
+                    <label for="inputName" class="col-sm-3 col-form-label">Kategori</label>
+
+                      <select name='bisnis_kategori_id' class="form-control select2" style="width: 100%;">
+                        <?php foreach ($records as $row) {
+                          if ($rows['blogs_kategori_id'] == $row['blogs_kategori_id']){
+                            echo"<option selected='selected' value='$row[blogs_kategori_id]'>$row[blogs_kategori_judul]</option>";
+                          }else{
+                            echo"<option value='$row[blogs_kategori_id]'>$row[blogs_kategori_judul]</option>";
+                       }
+                     } ?>
+                    </select>
+
+                  </div>
+                </div></div>
+                  <div class="row">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Judul</label>
+                        <label>Judul ID</label>
                         <input type="text" class="form-control" name="blogs_judul" placeholder="">
                       </div>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Deskripsi</label>
-                        <textarea class="textarea"  name ="blogs_desk" style="width: 100%; height: 100px;"></textarea>
+                        <label>Judul ENG</label>
+                        <input type="text" class="form-control" name="blogs_judul_eng" placeholder="">
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Meta Deskripsi</label>
+                        <label>Deskripsi ID</label>
+                        <textarea class="textarea"  name ="blogs_desk" style="width: 100%; height: 100px;"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Deskripsi ENG</label>
+                        <textarea class="textarea"  name ="blogs_desk_eng" style="width: 100%; height: 100px;"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Meta Deskripsi ID</label>
                         <input type="text" class="form-control" name="blogs_meta_desk" placeholder="Meta Deskripsi">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Meta Deskripsi ENG</label>
+                        <input type="text" class="form-control" name="blogs_meta_desk_eng" placeholder="Meta Deskripsi">
                       </div>
                     </div>
                     <div class="col-sm-12">
