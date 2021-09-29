@@ -34,7 +34,7 @@ class M_produk extends CI_Model{
   {
     $this->db->where('tatakelola_kategori.tatakelola_cat_id', $ids);
     $this->db->or_where('tatakelola_kategori.tatakelola_cat_judul_seo', $ids);
-    $this->db->join('tatakelola_kategori', 'tatakelola_kategori.tatakelola_cat_id = tatakelola.tatakelola_id','inner');
+    $this->db->join('tatakelola_kategori', 'tatakelola_kategori.tatakelola_cat_id = tatakelola.tatakelola_cat_id','inner');
     return $this->db->get('tatakelola')->result_array();
   }
 

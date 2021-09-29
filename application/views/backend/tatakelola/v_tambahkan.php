@@ -36,33 +36,25 @@
 
             <!-- form start -->
             <?php $attributes = array('class'=>'form-horizontal','role'=>'form');
-            echo form_open_multipart('aspanel/products_detail_tambahkan',$attributes); ?>
+            echo form_open_multipart('aspanel/tatakelola_tambahkan',$attributes); ?>
               <div class="card-body">
                 <div class="form-group">
-                  <input type="hidden" name="id_produk" value="<?php echo $produk->id_produk ?>">
+                  <input type="hidden" name="tatakelola_cat_id" value="<?php echo $post->tatakelola_cat_id ?>">
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Nama Produk Perusahaan</label>
-                        <input type="text" class="form-control" name="nama_produk_detail" placeholder="Nama Produk">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <label>Deskripsi</label>
-                        <textarea class="textarea"  name ="deskripsi_produk_detail" style="width: 100%; height: 100px;"></textarea>
+                        <label>Judul</label>
+                        <input type="text" class="form-control" name="tatakelola_judul" placeholder="Judul">
                       </div>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-sm-4">
                       <div class="form-group">
-                        <label>Gambar</label>
+                        <label>PDF</label>
                         <div class="custom-file">
                           <input type="file" class="custom-file-input" name="gambar" id="exampleInputFile">
-                          <label class="custom-file-label" for="exampleInputFile">Tambah gambar</label>
+                          <label class="custom-file-label" for="exampleInputFile">Tambah File Pdf</label>
                         </div>
                       </div>
                     </div>
@@ -72,7 +64,7 @@
               </div>
               <div class="card-footer">
                 <button type="submit" name ="submit" class="btn btn-success" title="Simpan"><i class="fas fa-file-upload"></i> Simpan</button>
-                <a class="btn btn-outline-info" title="Batal" href="<?php echo base_url()?>aspanel/products"><i class="fab fa-creative-commons-sa"></i> Batal</a>
+                <a class="btn btn-outline-info" title="Batal" href="<?php echo base_url()?>aspanel/tatakelola_kategori"><i class="fab fa-creative-commons-sa"></i> Batal</a>
 
               </div>
                 <?php echo form_close(); ?>

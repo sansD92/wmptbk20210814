@@ -41,10 +41,16 @@
                 <div class="form-group">
 
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Judul</label>
-                        <input type="text" class="form-control" name="bisnis_judul" placeholder="Interesting Title Ideas">
+                        <label>Judul ID</label>
+                        <input type="text" class="form-control" name="bisnis_judul" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Judul ENG</label>
+                        <input type="text" class="form-control" name="bisnis_judul_eng" placeholder="">
                       </div>
                     </div>
                   </div>

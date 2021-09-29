@@ -10,12 +10,12 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Perbarui Produk</h1>
+          <h1>Perbarui Tata Kelola</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/products">Produk</a></li>
-            <li class="breadcrumb-item active">Perbarui Produk</li>
+            <li class="breadcrumb-item"><a href="<?php echo base_url()?>aspanel/tatakelola">Tata Kelola</a></li>
+            <li class="breadcrumb-item active">Perbarui Tata Kelola</li>
           </ol>
         </div>
       </div>
@@ -34,46 +34,39 @@
             <!-- /.card-header -->
             <!-- form start -->
             <?php $attributes = array('class'=>'form-horizontal','role'=>'form');
-            echo form_open_multipart('aspanel/products_detail_update',$attributes); ?>
+            echo form_open_multipart('aspanel/tatakelola_update',$attributes); ?>
 
 
               <div class="card-body">
                 <div class="form-group">
-                  <input type="hidden" name="id_produk_detail" value="<?php echo $rows['id_produk_detail'] ?>">
+                  <input type="hidden" name="tatakelola_id" value="<?php echo $rows['tatakelola_id'] ?>">
+                  <input type="hidden" name="tatakelola_cat_id" value="<?php echo $rows['tatakelola_cat_id'] ?>">
                   <div class="row">
                     <div class="col-sm-12">
                       <div class="form-group">
-                        <label>Nama Produk</label>
-                        <input type="text" class="form-control" name="nama_produk_detail" value="<?php echo $rows['nama_produk_detail'] ?>">
+                        <label>Judul</label>
+                        <input type="text" class="form-control" name="tatakelola_judul" value="<?php echo $rows['tatakelola_judul'] ?>">
                       </div>
                     </div>
                   </div>
                   <div class="row">
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="form-group">
-                        <label>Deskripsi</label>
-                        <textarea class="textarea"  name ="deskripsi_produk_detail" style="width: 100%; height: 100px;"><?php echo $rows['deskripsi_produk_detail'] ?></textarea>
-                      </div>
-                    </div>
                   </div>
                   <div class="row">
                       <div class="col-sm-12">
                         <div class="form-group">
-                          <label>Gambar saat ini</label>
+                          <label>File Saat ini</label>
                           <div class="row">
-                            <img class="img-fluid mb-3" src="<?php echo base_url()?>assets/frontend/produk/<?php echo $rows['foto_produk_detail'] ?>" alt="Photo">
+                            <a href="<?php echo base_url()?>assets/frontend/tatakelola/<?php echo $rows['tatakelola_gambar'] ?>" alt="pdf">
                           </div>
                         </div>
                       </div>
                       <div class="col-sm-12">
                         <!-- text input -->
                         <div class="form-group">
-                          <label>Ubah gambar</label>
+                          <label>Ubah File</label>
                           <div class="custom-file">
-                            <input type="file" class="custom-file-input" name="gambar">
-                            <label class="custom-file-label" for="exampleInputFile"><?php echo $rows['foto_produk_detail'] ?></label>
+                            <input type="file" class="custom-file-input" name="pdf">
+                            <label class="custom-file-label" for="exampleInputFile"></label>
                           </div>
                         </div>
                       </div>
@@ -83,7 +76,7 @@
               </div>
               <div class="card-footer">
                 <button type="submit" name ="submit" class="btn btn-success" title="Simpan"><i class="fas fa-file-upload"></i> Simpan</button>
-                <a class="btn btn-primary" title="Batal" href="<?php echo base_url()?>aspanel/products"><i class="fab fa-creative-commons-sa"></i> Batal</a>
+                <a class="btn btn-primary" title="Batal" href="<?php echo base_url()?>aspanel/tatakelola_kategori"><i class="fab fa-creative-commons-sa"></i> Batal</a>
 
               </div>
             <?php echo form_close(); ?>

@@ -41,10 +41,16 @@
                 <div class="form-group">
                   <input type="hidden" name="bisnis_id" value="<?php echo $rows['bisnis_id'] ?>">
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Judul</label>
+                        <label>Judul ID</label>
                         <input type="text" class="form-control" name="bisnis_judul" value="<?php echo $rows['bisnis_judul'] ?>">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Judul ENG</label>
+                        <input type="text" class="form-control" name="bisnis_judul_eng" value="<?php echo $rows['bisnis_judul_eng'] ?>">
                       </div>
                     </div>
                   </div>
