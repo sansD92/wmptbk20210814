@@ -274,13 +274,17 @@ class Crud_m extends CI_model{
        {
             //return current article views
             $this->db->where('blogs_judul_seo', urldecode($id));
+            $this->db->or_where('blogs_judul_seo_eng', urldecode($id));
             $this->db->select('blogs_dibaca');
             $count = $this->db->get('blogs')->row();
             // then increase by one
             $this->db->where('blogs_judul_seo', urldecode($id));
+            $this->db->or_where('blogs_judul_seo_eng', urldecode($id));
             $this->db->set('blogs_dibaca', ($count->blogs_dibaca + 1));
             $this->db->update('blogs');
         }
+
+
 
   public function view_ordering_limits($table,$order,$ordering,$baris,$dari)
     {

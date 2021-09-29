@@ -9,7 +9,6 @@ class Berita extends CI_Controller {
     $this->load->model(array('Crud_m'));
     /* memanggil function dari masing2 model yang akan digunakan */
   }
-
   public function index()
   {
    $this->load->library('pagination');
@@ -55,10 +54,6 @@ class Berita extends CI_Controller {
 		$this->pagination->initialize($config);
      $this->load->view('fronts/beritas/v_berita', $data);
   }
-
-
-
-
   public function detail($id)
 	{
 
@@ -86,7 +81,6 @@ class Berita extends CI_Controller {
 							redirect(base_url());
 						}
 	}
-
   function add_count_blogs($id)
 	{
 			$check_visitor = $this->input->cookie(urldecode($id), FALSE);
@@ -143,17 +137,13 @@ class Berita extends CI_Controller {
 		$data['post_terbaru']= $this->Crud_m->view_one_limit('blogs','blogs_status','blogs_id','desc',$dari,$config['per_page']);
 
 		$this->pagination->initialize($config);
-     $this->load->view('fronts/beritas/v_berita_eng', $data);
+     $this->load->view('fronts_eng/beritas/v_berita', $data);
   }
-
-
-
-
   public function detail_eng($id)
 	{
 
 			$config['per_page'] = 4;
-			$row = $this->Crud_m->get_by_id_post($id,'blogs_id','blogs','blogs_judul_seo');
+			$row = $this->Crud_m->get_by_id_post($id,'blogs_id','blogs','blogs_judul_seo_eng');
 			if ($this->uri->segment('4')==''){
 				$dari = 0;
 				}else{
@@ -164,10 +154,10 @@ class Berita extends CI_Controller {
           $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
           $data['status']   = 'active';
           $data['status_produk']   = '';
-					$data['posts']            = $this->Crud_m->get_by_id_post($id,'blogs_id','blogs','blogs_judul_seo');
-					$this->add_count_blogs($id);
+					$data['posts']            = $this->Crud_m->get_by_id_post($id,'blogs_id','blogs','blogs_judul_seo_eng');
+	         $this->add_count_blogs($id);
 					$data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
-          $this->load->view('fronts/beritas/v_detail_eng', $data);
+          $this->load->view('fronts_eng/beritas/v_detail', $data);
 				}
 				else
 						{
@@ -177,15 +167,5 @@ class Berita extends CI_Controller {
 						}
 	}
 
-  function add_count_blogs_eng($id)
-	{
-			$check_visitor = $this->input->cookie(urldecode($id), FALSE);
-			$ip = $this->input->ip_address();
-			if ($check_visitor == false) {
-					$cookie = array("name" => urldecode($id), "value" => "$ip", "expire" => time() + 10, "secure" => false);
-					$this->input->set_cookie($cookie);
-					$this->Crud_m->update_counter_berita(urldecode($id));
-			}
-	}
 
 }

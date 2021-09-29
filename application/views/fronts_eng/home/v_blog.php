@@ -16,8 +16,8 @@
             <div class="col-md-12">
                 <div class="blog_wrap carousel_slide3 owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-autoplay-timeout="2000">
                     <?php  foreach ($posts_blogs as $post_new){
-                                        $isi = character_limiter($post_new->blogs_desk,230);
-                                        $judul = character_limiter($post_new->blogs_judul,100);
+                                        $isi = character_limiter($post_new->blogs_desk_eng,230);
+                                        $judul = character_limiter($post_new->blogs_judul_eng,100);
                                         ?>
                     <div class="items">
                         <div class="blog_post blog_style1">
@@ -34,7 +34,7 @@
                             <div class="blog_content bg-white">
                                 <p><i class="ion-calendar"></i> <?php echo tgl_indo($post_new->blogs_post_tanggal)?></p>
                                 <div class="blog_text">
-                                    <h6 class=""><a href="#"><?php echo $judul?></a>
+                                    <h6 class=""><a href="<?php echo base_url("eng/$post_new->blogs_judul_seo_eng") ?>"><?php echo $judul?></a>
                                   </h6>
 
                                 </div>
