@@ -89,9 +89,9 @@
                                 <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/companystructure">Organization Structure</a></li>
                                 <li><a  class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/product">Products</a></li>
 
-                             
 
-                               
+
+
 
                             </ul>
                         </div>
@@ -184,10 +184,10 @@
                                         </ul>
                                     </div>
                                 </li>
-                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Company Activities</a></li>
+                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/company-activities">Company Activities</a></li>
 
 
-                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#">Gallery</a></li>
+                             <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/gallery">Gallery</a></li>
 
 
                         </ul>

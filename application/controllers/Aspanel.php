@@ -1649,8 +1649,9 @@ class Aspanel extends CI_Controller {
 													'bisnis_kategori_post_oleh'=>$this->session->username,
 													'bisnis_kategori_judul'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul')),
 													'bisnis_kategori_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul')),
+													'bisnis_kategori_judul_eng'=>$this->db->escape_str($this->input->post('bisnis_kategori_judul_eng')),
+													'bisnis_kategori_judul_seo_eng'=>$this->mylibrary->seo_title($this->input->post('bisnis_kategori_judul_eng')),
 													'bisnis_kategori_desk_eng'=>$this->input->post('bisnis_kategori_desk_eng'),
-
 													'bisnis_kategori_meta_desk_eng'=>$this->input->post('bisnis_kategori_meta_desk_eng'),
 													'bisnis_kategori_desk'=>$this->input->post('bisnis_kategori_desk'),
 													'bisnis_kategori_post_hari'=>hari_ini(date('w')),
@@ -2123,29 +2124,7 @@ class Aspanel extends CI_Controller {
 	/*	Bagian untuk Bisnis - Pembuka	*/
 	public function bisnis()
 	{
-		$data['karyawan_menu_open']   = '';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = '';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = '';
-		$data['slider_stat']   = '';
-		$data['kontribs_stat']   = '';
-		$data['message_stat']   = '';
-		$data['gallery_stat']   = '';
-		$data['kehadiran_menu_open']   = '';
-			$data['jamkerja_stat']   = '';
-			$data['absen_stat']   = '';
-			$data['dataabsen_stat']   = '';
-			$data['cuti_stat']   = '';
-			$data['gaji_stat']   = '';
-			$data['pengumuman_stat']   = '';
-			$data['konfig_stat']   = '';
-			$data['produk_menu_open']   = 'menu-open';
-			$data['bisnis']   = 'active';
-			$data['produk']   = '';
-			$data['services']   = '';
+
 
 				if ($this->session->level=='1'){
 						$data['record'] = $this->Crud_m->view_join_where_ordering('bisnis','bisnis_kategori','bisnis_kategori_id',array('bisnis_status'=>'publish'),'bisnis_id','DESC');
@@ -2158,29 +2137,7 @@ class Aspanel extends CI_Controller {
 	}
 	public function bisnis_storage_bin()
 	{
-		$data['karyawan_menu_open']   = '';
-		$data['home_stat']   = '';
-		$data['identitas_stat']   = '';
-		$data['profil_stat']   = '';
-		$data['sliders_stat']   = '';
-		$data['products_stat']   = '';
-		$data['cat_products_stat']   = '';
-		$data['slider_stat']   = '';
-		$data['kontribs_stat']   = '';
-		$data['message_stat']   = '';
-		$data['gallery_stat']   = '';
-		$data['kehadiran_menu_open']   = '';
-			$data['jamkerja_stat']   = '';
-			$data['absen_stat']   = '';
-			$data['dataabsen_stat']   = '';
-			$data['cuti_stat']   = '';
-			$data['gaji_stat']   = '';
-			$data['pengumuman_stat']   = '';
-			$data['konfig_stat']   = '';
-			$data['produk_menu_open']   = 'menu-open';
-			$data['bisnis']   = 'active';
-			$data['produk']   = '';
-			$data['services']   = '';
+
 
 				if ($this->session->level=='1'){
 						$data['record'] = $this->Crud_m->view_where_ordering('bisnis',array('bisnis_status'=>'delete'),'bisnis_id','DESC');
@@ -2237,6 +2194,8 @@ class Aspanel extends CI_Controller {
 													'bisnis_post_oleh'=>$this->session->username,
 													'bisnis_judul'=>$this->db->escape_str($this->input->post('bisnis_judul')),
 													'bisnis_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_judul')),
+													'bisnis_judul_eng'=>$this->db->escape_str($this->input->post('bisnis_judul_eng')),
+													'bisnis_judul_seo_eng'=>$this->mylibrary->seo_title($this->input->post('bisnis_judul_eng')),
 													'bisnis_desk_eng'=>$this->input->post('bisnis_desk_eng'),
 													'bisnis_meta_desk_eng'=>$this->input->post('bisnis_meta_desk_eng'),
 													'bisnis_desk'=>$this->input->post('bisnis_desk'),
@@ -2254,6 +2213,8 @@ class Aspanel extends CI_Controller {
 													'bisnis_post_oleh'=>$this->session->username,
 													'bisnis_judul'=>$this->db->escape_str($this->input->post('bisnis_judul')),
 													'bisnis_judul_seo'=>$this->mylibrary->seo_title($this->input->post('bisnis_judul')),
+													'bisnis_judul_eng'=>$this->db->escape_str($this->input->post('bisnis_judul_eng')),
+													'bisnis_judul_seo_eng'=>$this->mylibrary->seo_title($this->input->post('bisnis_judul_eng')),
 													'bisnis_desk_eng'=>$this->input->post('bisnis_desk_eng'),
 													'bisnis_meta_desk_eng'=>$this->input->post('bisnis_meta_desk_eng'),
 													'bisnis_desk'=>$this->input->post('bisnis_desk'),
@@ -2271,29 +2232,7 @@ class Aspanel extends CI_Controller {
 								$this->As_m->insert('bisnis',$data);
 								redirect('aspanel/bisnis');
 				}else{
-					$data['karyawan_menu_open']   = '';
-					$data['home_stat']   = '';
-					$data['identitas_stat']   = '';
-					$data['profil_stat']   = '';
-					$data['sliders_stat']   = '';
-					$data['products_stat']   = '';
-					$data['cat_products_stat']   = '';
-					$data['slider_stat']   = '';
-					$data['kontribs_stat']   = '';
-					$data['message_stat']   = '';
-					$data['gallery_stat']   = '';
-					$data['kehadiran_menu_open']   = '';
-					$data['jamkerja_stat']   = '';
-					$data['absen_stat']   = '';
-					$data['dataabsen_stat']   = '';
-					$data['cuti_stat']   = '';
-					$data['gaji_stat']   = '';
-					$data['pengumuman_stat']   = '';
-					$data['konfig_stat']   = '';
-					$data['produk_menu_open']   = 'menu-open';
-					$data['bisnis']   = 'active';
-					$data['produk']   = '';
-					$data['services']   = '';
+
 					$data['records'] = $this->Crud_m->view_ordering('bisnis_kategori','bisnis_kategori_id','DESC');
 					$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 					$this->load->view('backend/bisnis/v_tambahkan', $data);
@@ -2346,6 +2285,7 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_update_oleh'=>$this->session->username,
 											'bisnis_judul'=>$this->db->escape_str($this->input->post('bisnis_judul')),
+											'bisnis_judul_eng'=>$this->db->escape_str($this->input->post('bisnis_judul_eng')),
 											'bisnis_desk_eng'=>$this->input->post('bisnis_desk_eng'),
 											'bisnis_meta_desk_eng'=>$this->input->post('bisnis_meta_desk_eng'),
 											'bisnis_desk'=>$this->input->post('bisnis_desk'),
@@ -2362,6 +2302,7 @@ class Aspanel extends CI_Controller {
 										$data = array(
 											'bisnis_update_oleh'=>$this->session->username,
 											'bisnis_judul'=>$this->db->escape_str($this->input->post('bisnis_judul')),
+											'bisnis_judul_eng'=>$this->db->escape_str($this->input->post('bisnis_judul_eng')),
 											'bisnis_desk_eng'=>$this->input->post('bisnis_desk_eng'),
 											'bisnis_meta_desk_eng'=>$this->input->post('bisnis_meta_desk_eng'),
 											'bisnis_desk'=>$this->input->post('bisnis_desk'),
@@ -2388,30 +2329,7 @@ class Aspanel extends CI_Controller {
 			}else{
 					$proses = $this->As_m->edit('bisnis', array('bisnis_id' => $id, 'bisnis_post_oleh' => $this->session->username))->row_array();
 			}
-			$data = array('rows' => $proses);
-			$data['karyawan_menu_open']   = '';
-			$data['home_stat']   = '';
-			$data['identitas_stat']   = '';
-			$data['profil_stat']   = '';
-			$data['sliders_stat']   = '';
-			$data['products_stat']   = '';
-			$data['cat_products_stat']   = 'active';
-			$data['slider_stat']   = '';
-			$data['kontribs_stat']   = '';
-			$data['message_stat']   = '';
-			$data['gallery_stat']   = '';
-			$data['kehadiran_menu_open']   = 'menu-open';
-				$data['jamkerja_stat']   = '';
-				$data['absen_stat']   = '';
-				$data['dataabsen_stat']   = 'active';
-				$data['cuti_stat']   = '';
-				$data['gaji_stat']   = '';
-				$data['pengumuman_stat']   = '';
-				$data['konfig_stat']   = '';
-				$data['produk_menu_open']   = 'menu-open';
-				$data['bisnis']   = 'active';
-				$data['produk']   = '';
-				$data['services']   = '';
+				$data = array('rows' => $proses);
 				$data['records'] = $this->Crud_m->view_ordering('bisnis_kategori','bisnis_kategori_id','DESC');
 				$data['tag'] = $this->Crud_m->view_ordering('keyword','keyword_id','DESC');
 				$this->load->view('backend/bisnis/v_update', $data);
@@ -5148,7 +5066,7 @@ class Aspanel extends CI_Controller {
 	{
 
 				if ($this->session->level=='1'){
-					$data['record'] = $this->Crud_m->view_join_where_ordering('blogs','blogs_kategori','blogs_kategori_id',array('blogs_status'=>'publish'),'blogs_id','DESC');		
+					$data['record'] = $this->Crud_m->view_join_where_ordering('blogs','blogs_kategori','blogs_kategori_id',array('blogs_status'=>'publish'),'blogs_id','DESC');
 				}elseif ($this->session->level=='2'){
 					$data['record'] = $this->Crud_m->view_join_where_ordering('blogs','blogs_kategori','blogs_kategori_id',array('blogs_status'=>'publish'),'blogs_id','DESC');
 				}else{

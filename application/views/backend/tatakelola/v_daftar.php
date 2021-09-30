@@ -50,7 +50,7 @@
                     <?php
                     echo"
                     <a class='btn btn-primary btn-sm' title='Edit Data' href='".base_url()."aspanel/tatakelola_update/$row[tatakelola_id]'><i class='fas fa-edit'></i></a>
-                    <a class='btn btn-danger btn-sm' title='Delete Data' href='".base_url()."aspanel/products_delete/$row[tatakelola_id]' onclick=\"return confirm('Are you sure want to delete this data?')\"><i class='fas fa-trash-alt'></i></a>";
+                    <a class='btn btn-danger btn-sm' title='Delete Data' href='".base_url()."aspanel/tatakelola_delete/$row[tatakelola_id]' onclick=\"return confirm('Are you sure want to delete this data?')\"><i class='fas fa-trash-alt'></i></a>";
                     ?>
                   </td>
                 </tr>

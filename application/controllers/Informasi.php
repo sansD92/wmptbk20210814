@@ -46,6 +46,8 @@ class Informasi extends CI_Controller {
     $this->load->view('fronts/informasi/v_kegiatan',$data);
   }
 
+
+
   public function mediarilis()
   {
     $kegiatan = '3';
@@ -67,6 +69,16 @@ class Informasi extends CI_Controller {
       $data['status']   = 'active';
       $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
-    $this->load->view('fronts/informasi/v_gallery_eng',$data);
+    $this->load->view('fronts_eng/informasi/v_gallery',$data);
   }
+
+  public function kegiatan_perusahaan_eng()
+ {
+   $kegiatan = '2';
+     $data['status']   = 'active';
+     $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+     $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
+     $data['post_kegiatan']             = $this->Crud_m->get_all_kegiatan($kegiatan);
+   $this->load->view('fronts_eng/informasi/v_kegiatan',$data);
+ }
 }
