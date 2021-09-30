@@ -39,21 +39,6 @@
             echo form_open_multipart('aspanel/bisnis_tambahkan',$attributes); ?>
               <div class="card-body">
                 <div class="form-group">
-
-                  <div class="row">
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label>Judul ID</label>
-                        <input type="text" class="form-control" name="bisnis_judul" placeholder="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <div class="form-group">
-                        <label>Judul ENG</label>
-                        <input type="text" class="form-control" name="bisnis_judul_eng" placeholder="">
-                      </div>
-                    </div>
-                  </div>
                   <div class="row">
                     <div class="col-sm-12">
                   <div class="form-group">
@@ -71,6 +56,21 @@
 
                   </div>
                 </div></div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Judul ID</label>
+                        <input type="text" class="form-control" name="bisnis_judul" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Judul ENG</label>
+                        <input type="text" class="form-control" name="bisnis_judul_eng" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="form-group">

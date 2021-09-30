@@ -15,25 +15,20 @@
           <?php  foreach ($posts_bisnis as $post_new){
             ?>
             <div class="col-md-4 mt-3 mt-md-4">
-            	<div class="flip_box  text_white">
-      					<center>
-                    <div class="front" >
+            	<div class="flip_box text_white">
+                    <div class="front background_bg " >
                       <img style="height:400px; width:400px" src="<?php echo base_url("assets/frontend/campur/bg_box_linibisnis_home.jpg") ?>" />
                       <div class="inner">
                               <img style="width: 150px;"src="<?php echo base_url("assets/frontend/linibisnis/$post_new->bisnis_kategori_gambar_icon") ?>" alt="Icon"/>
-          							        <h5><?php echo $post_new->bisnis_kategori_judul?></h5>
+          							      <h5><?php echo $post_new->bisnis_kategori_judul?></h5>
           						</div>
                   	</div>
-                  </center>
-
-                <div class="back">
-                    <img style="height:400px; width:400px" src="<?php echo base_url("assets/frontend/linibisnis/$post_new->bisnis_kategori_gambar_flip") ?>" alt="Icon"/>
-                    <div class="inner">
-
-                      				<p></p>
-                              <a href="<?php echo base_url("linibisnis/kategori/$post_new->bisnis_kategori_judul_seo") ?>" class="btn btn-outline-white">Selengkapnya</a>
-        						</div>
-                </div>
+                    <div class="back bg_blue">
+                        <img style="height:400px; width:400px" src="<?php echo base_url("assets/frontend/linibisnis/$post_new->bisnis_kategori_gambar_flip") ?>" />
+                        <div class="inner">
+                            <a href="<?php echo base_url("linibisnis/kategori/$post_new->bisnis_kategori_judul_seo") ?>" class="btn btn-outline-white">Selengkapnya</a>
+            						</div>
+                    </div>
 				      </div>
             </div>
 
