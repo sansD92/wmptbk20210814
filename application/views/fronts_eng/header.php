@@ -103,8 +103,8 @@
                     <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Business Line</a>
                     <div class="dropdown-menu">
                         <ul>
-                          <?php  foreach ($posts_bisnis as $post_new){ ?>
-                            <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="#"><?php echo $post_new->bisnis_kategori_judul?></a></li>
+                           <?php  foreach ($posts_bisnis as $post_new){ ?>
+                            <li><a style="text-transform: ;" class="dropdown-item nav-link nav_item" href="<?php echo base_url("linibisnis/kategori_eng/$post_new->bisnis_kategori_judul_seo") ?>"><?php echo $post_new->bisnis_kategori_judul?></a></li>
                           <?php } ?>
                         </ul>
                     </div>

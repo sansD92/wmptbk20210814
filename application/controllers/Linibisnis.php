@@ -185,7 +185,7 @@ class Linibisnis extends CI_Controller {
   }
   public function kategori_eng(){
 
-    $query = $this->model_utama->view_where('bisnis_kategori',array('bisnis_kategori_judul_seo' => $this->uri->segment(3)));
+     $query = $this->model_utama->view_where('bisnis_kategori',array('bisnis_kategori_judul_seo' => $this->uri->segment(3)));
     if ($query->num_rows()<=0){
       redirect('main');
     }else{
@@ -222,7 +222,7 @@ class Linibisnis extends CI_Controller {
       $data['title'] = "$row[bisnis_kategori_judul]";
       $data['gambar'] = "$row[bisnis_kategori_gambar]";
       $data['gambar_sub'] = "$row[bisnis_kategori_gambar_sub]";
-      $data['deskripsi'] = "$row[bisnis_kategori_desk]";
+      $data['deskripsi'] = "$row[bisnis_kategori_desk_eng]";
       $data['rows'] = $row;
       $page1 = 'Y';
 
@@ -239,7 +239,7 @@ class Linibisnis extends CI_Controller {
         redirect('main');
       }
       $this->pagination->initialize($config);
-      $this->load->view('fronts/linibisnis/v_linibisnis2_eng', $data);
+      $this->load->view('fronts_eng/linibisnis/v_linibisnis2_eng', $data);
     }
   }
 

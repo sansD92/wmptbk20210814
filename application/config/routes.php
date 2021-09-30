@@ -70,6 +70,7 @@ $route['eng/motto'] = "Tentangkami/motto_eng";
 $route['eng/commissioners-directors'] = "Tentangkami/komisaris_eng";
 $route['eng/companystructure'] = "Tentangkami/strukturcompany_eng";
 $route['eng/organizationalstructure'] = "Tentangkami/strukturorganisasi_eng";
+$route['Linibisnis/kategori_eng'] = "Linibisnis/kategori_eng";
 
 
 $route['eng/investor-shareholderinformation'] = "Investor/informasipemegangsaham_eng";
