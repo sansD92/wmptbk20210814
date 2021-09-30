@@ -163,26 +163,8 @@ public function index_eng()
   $this->load->view('fronts_eng/produk/v_index',$data);
 }
 
-public function detail_eng(){
+public function detail_eng($ids){
 
-
-      $query = $this->M_produk->view_join_oness('produk','produk_detail','id_produk',array('produk_seo' => $this->uri->segment(3)),'produk.id_produk','ASC',0,1);
-      if ($query->num_rows()<=0){
-        redirect('main');
-      }else{
-
-        $row = $query->row_array();
-            $data['rows'] = $row;
-        $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
-      $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
-      $data['produk_detail']            = $this->M_produk->get_by_id3($id);
-
-
-        $this->load->view('fronts/produk/v_produk_eng', $data);
-      }
-    }
-
-     function details_eng($ids){
 
       $row = $this->M_produk->get_by_id2($ids);
       /* melakukan pengecekan data, apabila ada maka akan ditampilkan */
@@ -193,9 +175,12 @@ public function detail_eng(){
        $data['produk_detail']            = $this->M_produk->get_by_id3($ids);
        $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
       $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
-      $this->load->view('fronts/produk/v_produk_eng', $data);
+
+        $this->load->view('fronts_eng/produk/v_produk', $data);
       }
-  }
+    }
+
+     
 public function produk1_eng()
 {
   $data['status']   = '';

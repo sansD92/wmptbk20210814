@@ -14,7 +14,7 @@
 												<div class='portfolio_content'>
 														<div class='link_container'>
 
-																<button type='button' class='btn btn-outline-white' data-toggle='modal' data-target='#modal-$row[id_produk_detail]'>Detail</i></button>
+																<button type='button' class='btn btn-outline-white' data-toggle='modal' data-target='#modal-$row[id_produk_detail]'>More</i></button>
 														</div>
 														<h5><a href='#'>$row[nama_produk_detail]</a></h5>
 

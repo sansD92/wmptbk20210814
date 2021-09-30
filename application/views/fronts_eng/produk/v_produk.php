@@ -12,26 +12,26 @@
 <!-- START HEADER -->
 
 <!-- START SECTION HEADER -->
-<?php $this->load->view('fronts/header.php')?>
+<?php $this->load->view('fronts_eng/header.php')?>
 <!-- END SECTION HEADER -->
 
 <!-- START SECTION BANNER -->
-<?php $this->load->view('fronts/produk/banner')?>
+<?php $this->load->view('fronts_eng/produk/banner')?>
 <!-- END SECTION BANNER -->
 <!-- START SECTION PRODUK DETAIL -->
-<?php $this->load->view('fronts/produk/produkdetail')?>
+<?php $this->load->view('fronts_eng/produk/produkdetail')?>
 <!-- END SECTION PRODUK DETAIL -->
 <!-- START SECTION PRODUK DETAIL -->
-<?php $this->load->view('fronts/produk/v_produk_detail')?>
+<?php $this->load->view('fronts_eng/produk/v_produk_detail')?>
 <!-- END SECTION PRODUK DETAIL -->
 
 
 <!-- START SECTION SUBCRIBE -->
-<?php $this->load->view('fronts/home/v_subcribe')?>
+<?php $this->load->view('fronts_eng/home/v_subcribe')?>
 <!-- END SECTION SUBCRIBE -->
 
 <!-- START FOOTER SECTION -->
-<?php $this->load->view('fronts/footer')?>
+<?php $this->load->view('fronts_eng/footer')?>
 <!-- END FOOTER SECTION -->
 
 <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>

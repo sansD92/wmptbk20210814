@@ -10,7 +10,7 @@
             	<div class='heading_s3'>
                     <h3>$row[nama_produk]</h3>
                 </div>
-                <p style='text-align:justify;'>$row[deskripsi_produk]</p>
+                <p style='text-align:justify;'>$row[deskripsi_produk_eng]</p>
 
 
 
@@ -18,9 +18,9 @@
             <div class='col-lg-4 col-md-5 animation' data-animation='fadeInUp' data-animation-delay='0.4s'>
             	<div class='gray_bg p-3 p-md-4'>
                     <ul class='list_none portfolio_info_box'>
-                        <li><span class='text-uppercase'>Bidang</span>$row[bidang_produk]</li>
+                        <li><span class='text-uppercase'>Products</span>$row[bidang_produk_eng]</li>
                         
-                        <li><span class='text-uppercase'>Temukan Kami</span>"; ?>
+                        <li><span class='text-uppercase'>Follow Us</span>"; ?>
                         	<ul class="social_icons">
 														<?php
 																	if(empty($row['facebook'])){
