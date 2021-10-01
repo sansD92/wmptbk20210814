@@ -176,10 +176,10 @@
                                     <div class="dropdown-menu dropdown-reverse">
                                         <ul>
 
-                            <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="#">Join us</a></li>
+                            <li><a style="text-transform: ;color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/join-us">Join us</a></li>
 
-                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Our Programs</a></li>
-                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="#">Contact us</a></li>
+                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/our-programs">Our Programs</a></li>
+                            <li><a style="text-transform: ; color: #000;" class="dropdown-item nav-link nav_item" href="<?php echo base_url()?>eng/contact-us">Contact us</a></li>
 
                                         </ul>
                                     </div>

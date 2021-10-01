@@ -41,7 +41,7 @@
                 <div class="form-group">
 
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
                         <label>Nama Perusahaan</label>
                         <input type="text" class="form-control" name="nama_produk" placeholder="Nama Produk">
@@ -49,14 +49,20 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Bidang</label>
-                        <input type="text" class="form-control" name="bidang_produk" placeholder="Bidang">
+                        <label>Website</label>
+                        <input type="text" class="form-control" name="website" placeholder="Alamat Website">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Website</label>
-                        <input type="text" class="form-control" name="website" placeholder="Alamat Website">
+                        <label>Bidang ID</label>
+                        <input type="text" class="form-control" name="bidang_produk" placeholder="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Bidang ENG</label>
+                        <input type="text" class="form-control" name="bidang_produk_eng" placeholder="">
                       </div>
                     </div>
                     <div class="col-sm-4">
@@ -98,10 +104,16 @@
                   </div>
 
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Deskripsi</label>
+                        <label>Deskripsi ID</label>
                         <textarea class="textarea"  name ="deskripsi_produk" style="width: 100%; height: 100px;"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Deskripsi ENG</label>
+                        <textarea class="textarea"  name ="deskripsi_produk_eng" style="width: 100%; height: 100px;"></textarea>
                       </div>
                     </div>
                   </div>

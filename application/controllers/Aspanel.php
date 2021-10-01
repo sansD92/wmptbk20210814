@@ -3486,6 +3486,8 @@ class Aspanel extends CI_Controller {
 													'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
 													'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
 													'bidang_produk'=>$this->input->post('bidang_produk'),
+													'deskripsi_produk_eng'=>$this->input->post('deskripsi_produk_eng'),
+													'bidang_produk_eng'=>$this->input->post('bidang_produk_eng'),
 													'website'=>$this->input->post('website'),
 													'facebook'=>$this->input->post('facebook'),
 													'instagram'=>$this->input->post('instagram'),
@@ -3500,6 +3502,8 @@ class Aspanel extends CI_Controller {
 													'produk_seo'=>$this->mylibrary->seo_title($this->input->post('nama_produk')),
 													'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
 													'bidang_produk'=>$this->input->post('bidang_produk'),
+													'deskripsi_produk_eng'=>$this->input->post('deskripsi_produk_eng'),
+													'bidang_produk_eng'=>$this->input->post('bidang_produk_eng'),
 													'website'=>$this->input->post('website'),
 													'facebook'=>$this->input->post('facebook'),
 													'instagram'=>$this->input->post('instagram'),
@@ -3512,22 +3516,7 @@ class Aspanel extends CI_Controller {
 								$this->As_m->insert('produk',$data);
 								redirect('aspanel/products');
 				}else{
-					$data['karyawan_menu_open']   = '';
-					$data['home_stat']   = '';
-					$data['identitas_stat']   = '';
-					$data['profil_stat']   = '';
-					$data['sliders_stat']   = '';
-					$data['products_stat']   = '';
-					$data['cat_products_stat']   = '';
-					$data['slider_stat']   = '';
-					$data['kontribs_stat']   = '';
-					$data['message_stat']   = '';
-					$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
 
-					$data['produk_menu_open']   = 'menu-open';
-		 			$data['produk_category']   = '';
-		 			$data['produk']   = 'active';
-		 			$data['services']   = '';
 					$this->load->view('backend/products/v_tambahkan', $data);
 				}
 	}
@@ -3556,6 +3545,8 @@ class Aspanel extends CI_Controller {
 											'nama_produk'=>$this->input->post('nama_produk'),
 											'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
 											'bidang_produk'=>$this->input->post('bidang_produk'),
+											'deskripsi_produk_eng'=>$this->input->post('deskripsi_produk_eng'),
+											'bidang_produk_eng'=>$this->input->post('bidang_produk_eng'),
 											'website'=>$this->input->post('website'),
 											'facebook'=>$this->input->post('facebook'),
 											'instagram'=>$this->input->post('instagram'),
@@ -3570,6 +3561,8 @@ class Aspanel extends CI_Controller {
 											'nama_produk'=>$this->input->post('nama_produk'),
 											'deskripsi_produk'=>$this->input->post('deskripsi_produk'),
 											'bidang_produk'=>$this->input->post('bidang_produk'),
+											'deskripsi_produk_eng'=>$this->input->post('deskripsi_produk_eng'),
+											'bidang_produk_eng'=>$this->input->post('bidang_produk_eng'),
 											'website'=>$this->input->post('website'),
 											'facebook'=>$this->input->post('facebook'),
 											'instagram'=>$this->input->post('instagram'),
@@ -3593,22 +3586,7 @@ class Aspanel extends CI_Controller {
 					$proses = $this->As_m->edit('produk', array('produk_seo' => $id))->row_array();
 			}
 			$data = array('rows' => $proses);
-			$data['karyawan_menu_open']   = '';
-			$data['home_stat']   = '';
-			$data['identitas_stat']   = '';
-			$data['profil_stat']   = '';
-			$data['sliders_stat']   = '';
-			$data['products_stat']   = '';
-			$data['cat_products_stat']   = '';
-			$data['slider_stat']   = '';
-			$data['kontribs_stat']   = '';
-			$data['message_stat']   = '';
-			$data['gallery_stat']   = ''; 		$data['kehadiran_menu_open']   = ''; 	    $data['jamkerja_stat']   = ''; 	    $data['absen_stat']   = ''; 	    $data['dataabsen_stat']   = ''; 	    $data['cuti_stat']   = ''; 	    $data['gaji_stat']   = ''; 	    $data['pengumuman_stat']   = ''; 	    $data['konfig_stat']   = '';
-
-			$data['produk_menu_open']   = 'menu-open';
- 			$data['produk_category']   = '';
- 			$data['produk']   = 'active';
- 			$data['services']   = '';
+		
 			$this->load->view('backend/products/v_update', $data);
 		}
 	}

@@ -41,7 +41,7 @@
                 <div class="form-group">
                   <input type="hidden" name="id_produk" value="<?php echo $rows['id_produk'] ?>">
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
                         <label>Nama Perusahaan</label>
                         <input type="text" class="form-control" name="nama_produk" value="<?php echo $rows['nama_produk'] ?>">
@@ -49,14 +49,20 @@
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Bidang</label>
-                        <input type="text" class="form-control" name="bidang_produk" placeholder="Bidang" value="<?php echo $rows['bidang_produk'] ?>">
+                        <label>Website</label>
+                        <input type="text" class="form-control" name="website" placeholder="Alamat Website" value="<?php echo $rows['website'] ?>">
                       </div>
                     </div>
                     <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Website</label>
-                        <input type="text" class="form-control" name="website" placeholder="Alamat Website" value="<?php echo $rows['website'] ?>">
+                        <label>Bidang ID</label>
+                        <input type="text" class="form-control" name="bidang_produk" placeholder="" value="<?php echo $rows['bidang_produk'] ?>">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Bidang ENG</label>
+                        <input type="text" class="form-control" name="bidang_produk_eng" placeholder="" value="<?php echo $rows['bidang_produk_eng'] ?>">
                       </div>
                     </div>
                     <div class="col-sm-4">
@@ -97,10 +103,16 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-6">
                       <div class="form-group">
-                        <label>Deskripsi</label>
+                        <label>Deskripsi ID</label>
                         <textarea class="textarea"  name ="deskripsi_produk" style="width: 100%; height: 100px;"><?php echo $rows['deskripsi_produk'] ?></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                        <label>Deskripsi ENG</label>
+                        <textarea class="textarea"  name ="deskripsi_produk_eng" style="width: 100%; height: 100px;"><?php echo $rows['deskripsi_produk_eng'] ?></textarea>
                       </div>
                     </div>
                   </div>

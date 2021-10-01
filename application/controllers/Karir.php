@@ -61,7 +61,7 @@ public function penerimaan_pegawai()
 
 
 
-  $this->load->view('fronts/karir/v_hubungikami_eng',$data);
+  $this->load->view('fronts_eng/karir/v_hubungikami',$data);
 }
 public function ikhtisar_hc_eng()
 {
@@ -79,14 +79,14 @@ public function ikhtisar_hc_eng()
 public function penerimaan_pegawai_eng()
 {
 
-        $data['status']   = '';
+    $data['status']   = '';
     $data['status_produk']   = '';
     $data['status_lini']   = 'active';
     $data['posts_bisnis'] = $this->Crud_m->view_where_orders('bisnis_kategori','bisnis_kategori_status','bisnis_kategori_id','ASC');
-      $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
+    $data['identitas']= $this->Crud_m->get_by_id_identitas($id='1');
 
 
 
-  $this->load->view('fronts/karir/v_penerimaan_eng',$data);
+  $this->load->view('fronts_eng/karir/v_penerimaan',$data);
 }
 }

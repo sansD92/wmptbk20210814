@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- START SECTION HEAD -->
-<?php $this->load->view('fronts/head.php')?>
+<?php $this->load->view('fronts_eng/head.php')?>
 <!-- END SECTION HEAD -->
 
 <body>
@@ -10,7 +10,7 @@
 
 
 <!-- START HEADER -->
-<?php $this->load->view('fronts/header.php')?>
+<?php $this->load->view('fronts_eng/header.php')?>
 <!-- END HEADER -->
 
 
@@ -20,10 +20,10 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="page-title">
-                   
+
                 </div>
                 <nav aria-label="breadcrumb">
-                 
+
                 </nav>
             </div>
         </div>
@@ -39,14 +39,14 @@
             <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                 <div class="col-md-12 col-sm-12 mb-12 mb-lg-0 ">
                     <div class="heading_s1 text-center">
-                    <h2>Program Kami</h2>
+                    <h2>Our Programs</h2>
                 </div>
 
           <div class="col-lg-12">
               <div class="row">
 
           <?php  foreach ($posts_programkami as $post_new){
-                                    $jdl = character_limiter($post_new->blogs_judul,30);
+                                    $jdl = character_limiter($post_new->blogs_judul_eng,30);
                                         ?>
                     <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
                         <div class="blog_post blog_style1">
@@ -85,11 +85,11 @@
             </div>
             <div class="col-lg-3 mt-lg-0 mt-4 pt-3 pt-lg-0">
               <div class="sidebar">
-                   
 
-                  
 
-                  
+
+
+
                     </div>
                 </div>
             </div>
@@ -99,11 +99,11 @@
 </section>
 
 <!-- START SECTION SUBCRIBE -->
-<?php $this->load->view('fronts/home/v_subcribe')?>
+<?php $this->load->view('fronts_eng/home/v_subcribe')?>
 <!-- END SECTION SUBCRIBE -->
 
 <!-- START FOOTER SECTION -->
-<?php $this->load->view('fronts/footer')?>
+<?php $this->load->view('fronts_eng/footer')?>
 <!-- END FOOTER SECTION -->
 
 <a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>
