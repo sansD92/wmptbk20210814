@@ -17,6 +17,7 @@ $route['investor-kegiatan'] = "Investor/kegiatan";
 $route['investor-informasipendukung'] = "Investor/informasipendukung";
 
 $route['program-kami'] = "informasi/programkami";
+$route['eng/our-programs'] = "informasi/programkami_eng";
 
 
 $route['hubungi-kami-karir'] = "Karir/hubungi_kami";
@@ -77,11 +78,12 @@ $route['eng/investor-shareholderinformation'] = "Investor/informasipemegangsaham
 $route['eng/investor-activity'] = "Investor/kegiatan_eng";
 $route['eng/investor-supportinginformation '] = "Investor/informasipendukung_eng";
 
-$route['eng/gallery-information'] = "informasi/gallery_eng";
+$route['eng/gallery'] = "informasi/gallery_eng";
+$route['eng/company-activities'] = "informasi/kegiatan_perusahaan_eng";
 
-$route['eng/contact-us-career'] = "Karir/hubungi_kami_eng";
+$route['eng/contact-us'] = "Karir/hubungi_kami_eng";
 $route['eng/overview-hc'] = "Karir/ikhtisar_hc_eng";
-$route['eng/recruitment'] = "Karir/penerimaan_pegawai_eng";
+$route['eng/join-us'] = "Karir/penerimaan_pegawai_eng";
 $route['eng/investor-relationship'] = "Investor/hubunganinvestor_eng";
 
 $route['eng/governance-codeofconduct'] = "Investor/tatakelola1_eng";

@@ -46,20 +46,20 @@
               <div class="row">
 
           <?php  foreach ($posts_programkami as $post_new){
-                                    $jdl = character_limiter($post_new->blogs_judul_eng,30);
+                                    $jdl = character_limiter($post_new->blogs_judul_eng,300);
                                         ?>
                     <div class="col-lg-4 col-md-6 mb-md-4 mb-2 pb-2">
                         <div class="blog_post blog_style1">
                             <div class="blog_img">
-                                <a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>">
+                                <a href="<?php echo base_url("eng/$post_new->blogs_judul_seo_eng") ?>">
                                     <img src="<?php echo base_url();?>assets/frontend/blogs/<?php echo $post_new->blogs_gambar ?>">
                                 </a>
                             </div>
                             <div class="blog_content bg-white">
                                 <div class="blog_text">
-                                    <h6 class="blog_title"><a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><?php echo $jdl ?></a></h6>
+                                    <h6 class="blog_title"><a href="<?php echo base_url("eng/$post_new->blogs_judul_seo_eng") ?>"><?php echo $jdl ?></a></h6>
                                     <ul class="list_none blog_meta">
-                                        <li><a href="<?php echo base_url("$post_new->blogs_judul_seo") ?>"><i class="ion-calendar"></i> <?php echo  tgl_indo($post_new->blogs_post_tanggal); ?></a></li>
+                                        <li><a href="<?php echo base_url("eng/$post_new->blogs_judul_seo_eng") ?>"><i class="ion-calendar"></i> <?php echo  tgl_indo($post_new->blogs_post_tanggal); ?></a></li>
 
                                     </ul>
 
