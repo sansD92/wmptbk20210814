@@ -3586,7 +3586,7 @@ class Aspanel extends CI_Controller {
 					$proses = $this->As_m->edit('produk', array('produk_seo' => $id))->row_array();
 			}
 			$data = array('rows' => $proses);
-		
+
 			$this->load->view('backend/products/v_update', $data);
 		}
 	}
@@ -3771,7 +3771,7 @@ class Aspanel extends CI_Controller {
 			cek_session_akses ('products_detail',$this->session->id_session);
 			$id = $this->uri->segment(3);
 			$_id = $this->db->get_where('produk_detail',['id_produk_detail' => $id])->row();
-			 $query = $this->db->delete('produk_detail',['id_produk_detail'=>$id]);
+			$query = $this->db->delete('produk_detail',['id_produk_detail'=>$id]);
 		 	if($query){
 							 unlink("./assets/frontend/produk/".$_id->foto_produk_detail);
 		 }

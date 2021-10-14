@@ -1,6 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Main';
+$route['404_override'] = 'Notfound';
+$route['translate_uri_dashes'] = FALSE;
+$route['petacrawl\.xml'] = "petacrawl";
 $route['login'] = "Aspanel/login";
 $route['tentangkami'] = "Tentangkami/profil_perusahaan";
 $route['visimisi'] = "Tentangkami/visimisi";
@@ -52,9 +55,7 @@ $route['laporan'] = "Kontrib/laporan";
 $route['bisnis/(:any)'] = "main/bisnis/$1";
 $route['(:any)'] = "berita/detail/$1";
 
-$route['404_override'] = 'Notfound';
-$route['translate_uri_dashes'] = FALSE;
-$route['petacrawl\.xml'] = "petacrawl";
+
 
 
 // English Version
